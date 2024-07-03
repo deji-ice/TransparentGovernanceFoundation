@@ -8,29 +8,30 @@ export default function NavBar() {
   const [navbar, setNavbar] = useState<boolean>(false);
 
   return (
-    <nav className="w-full bg-slate-800 text-white  shadow fixed z-30 top-0 font-programme ">
+    <nav className="w-full bg-green-200 text-black shadow fixed z-30 top-0 font-programme ">
       <div className="justify-between px-4 mx-auto md:max-w-7xl md:items-center lg:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 lg:py-2 ">
             <Link href={"/"}>
-              <Image
+              {/* <Image
                 src={`https://res.cloudinary.com/dhvwthnzq/image/upload/v1692882879/boldo/Logo_1_isvimz.png`}
                 alt="logo ice"
                 className="invert"
                 height={100}
                 width={150}
-              />
+              /> */}
+              <h1 className="text-3xl font-semibold font-playfair">TGF</h1>
             </Link>
 
             <div className="lg:hidden">
               <button
-                className="p-2 text-white rounded-md outline-none focus:border-gray-400 focus:border"
+                className="p-2 text-black rounded-md outline-none focus:border-gray-400 focus:border"
                 onClick={() => setNavbar(!navbar)}
               >
                 {navbar ? (
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="w-6 h-6 text-white"
+                    className="w-6 h-6 text-black"
                     viewBox="0 0 20 20"
                     fill="currentColor"
                   >
@@ -43,7 +44,7 @@ export default function NavBar() {
                 ) : (
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="w-6 h-6 text-white"
+                    className="w-6 h-6 text-black"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -70,22 +71,22 @@ export default function NavBar() {
               className="items-center justify-center md:text-sm space-y-8 md:ml-[32rem] md:flex
                             lg:flex-row md:flex-col lg:space-x-6 lg:mr-10 lg:space-y-0 md:space-x-10 md:space-y-8"
             >
-              <li className="text-white  md:min-w-fit hover:text-[#ffffff] hover:underline underline-offset-4  ">
+              <li className="text-green-800  md:min-w-fit hover:text-[#ffffff] hover:underline underline-offset-4  ">
                 <Link href="#aboutUs" onClick={() => setNavbar(!navbar)}>
                  Who we are
                 </Link>
               </li>
-              <li className="text-white md:min-w-fit hover:text-[#ffffff] hover:underline underline-offset-4 ">
+              <li className="text-green-800 md:min-w-fit hover:text-[#ffffff] hover:underline underline-offset-4 ">
                 <Link href="#experience">
                   <button onClick={() => setNavbar(!navbar)}>Memebership</button>
                 </Link>
               </li>
-              <li className="text-white md:min-w-fit hover:text-[#ffffff] hover:underline underline-offset-4 ">
+              <li className="text-green-800 md:min-w-fit hover:text-[#ffffff] hover:underline underline-offset-4 ">
                 <Link href="#projects">
                   <button onClick={() => setNavbar(!navbar)}>Projects</button>
                 </Link>
               </li>
-              <li className="text-white md:min-w-fit hover:text-[#ffffff] hover:underline underline-offset-4 ">
+              <li className="text-green-800 md:min-w-fit hover:text-[#ffffff] hover:underline underline-offset-4 ">
                 <Link href="#contactUs">
                   <button onClick={() => setNavbar(!navbar)}>Contact Us</button>
                 </Link>
@@ -93,11 +94,11 @@ export default function NavBar() {
             </ul>
             {/* <div className="mt-5 space-y-2 space-x-2 flex items-center lg:hidden">
                             <button className="w-1/2 px-4 py-2 text-center text-[#068353]
-                            bg-white rounded-3xl  border-[#068353] border-[0.3px] mx-10 pl-3 p-1 items-center shadow hover:bg-[#068353] hover:text-white ">
+                            bg-white rounded-3xl  border-[#068353] border-[0.3px] mx-10 pl-3 p-1 items-center shadow hover:bg-[#068353] hover:text-black ">
                                 Sign in
                             </button>
 
-                            <button className="w-1/2 px-4 py-2 text-center text-white 
+                            <button className="w-1/2 px-4 py-2 text-center text-black 
                             bg-[#068353] mx-10 pl-3 p-1 items-center  rounded-3xl shadow hover:bg-green-600" >
                                 Sign up
                             </button>
@@ -107,11 +108,11 @@ export default function NavBar() {
         </div>
         {/* <div className="hidden space-x-2  lg:flex md:hidden ">
                     <button className="inline-block w-[6rem] py-2 text-center text-[#068353] border-[#068353] border-[0.3px]
-                     bg-white rounded-3xl md:text-sm shadow hover:bg-[#068353] hover:text-white">
+                     bg-white rounded-3xl md:text-sm shadow hover:bg-[#068353] hover:text-black">
                         Sign in
                     </button>
 
-                    <button className="inline-block py-2 text-sm  w-[6rem] text-center text-white bg-[#068353] rounded-3xl shadow hover:bg-green-600" >
+                    <button className="inline-block py-2 text-sm  w-[6rem] text-center text-black bg-[#068353] rounded-3xl shadow hover:bg-green-600" >
                         Sign up
                     </button>
                 </div> */}
