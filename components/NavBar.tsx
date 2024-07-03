@@ -8,7 +8,7 @@ export default function NavBar() {
   const [navbar, setNavbar] = useState<boolean>(false);
 
   return (
-    <nav className="w-full bg-green-200 text-black shadow fixed z-30 top-0 font-programme ">
+    <nav className="w-full bg-white text-black shadow fixed z-30 top-0 font-programme ">
       <div className="justify-between px-4 mx-auto md:max-w-7xl md:items-center lg:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 lg:py-2 ">
@@ -72,7 +72,7 @@ export default function NavBar() {
                             lg:flex-row md:flex-col lg:space-x-6 lg:mr-10 lg:space-y-0 md:space-x-10 md:space-y-8"
             >
               <li className="text-green-800  md:min-w-fit hover:text-[#ffffff] hover:underline underline-offset-4  ">
-                <Link href="#aboutUs" onClick={() => setNavbar(!navbar)}>
+                <Link href="/AboutUs" onClick={() => setNavbar(!navbar)}>
                  Who we are
                 </Link>
               </li>

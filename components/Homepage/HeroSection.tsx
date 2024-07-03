@@ -1,9 +1,21 @@
+import Image from "next/image";
 import React from "react";
 
 const HeroSection = () => {
   return (
-    <div className="bg-green-800 flex flex-col items-center justify-center gap-5 px-[20%] h-[94dvh] w-screen text-white">
-      <p className="font-semibold">Empowering Communities for a Brighter Future</p>
+    <div className=" relative bg-green-800 flex flex-col items-center justify-center gap-5 px-[20%] h-[94dvh] w-screen text-white">
+      <Image
+      className="absolute top-0 z-20 h-full w-[50rem] right-0"
+        src={
+          "https://res.cloudinary.com/dhvwthnzq/image/upload/v1720023999/Transparent%20Governance%20Foundation/wave_nvvvyj.png"
+        }
+        alt={"wave"}
+        height={1000}
+        width={500}
+      />
+      <p className="font-semibold">
+        Empowering Communities for a Brighter Future
+      </p>
       <div className="flex flex-col  gap-3 justify-center items-center">
         <h1 className="text-5xl font-playfair font-semibold text-center">
           Heroes of Transparent Governance Foundation
