@@ -1,9 +1,19 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Montserrat, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/NavBar";
 
-const inter = Inter({ subsets: ["latin"] });
+const montserrat  = Montserrat({ 
+ subsets: ["latin"],
+ variable: "--font-montserrat",
+ display: 'swap',
+});
+
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--font-playfair-display",
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   title: "Transparent Governance Foundation",
@@ -17,9 +27,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <NavBar/>
-        {children}</body>
+      <body className={`${playfair.variable} ${montserrat.variable} font-montserrat`}>
+        <NavBar />
+        {children}
+      </body>
     </html>
   );
 }
