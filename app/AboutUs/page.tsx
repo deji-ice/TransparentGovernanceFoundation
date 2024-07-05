@@ -8,7 +8,7 @@ const AboutUs = () => {
     <div className="flex flex-col items-center justify-between mt-10">
       <section className="flex flex-col items-center px-10 md:px-20 py-8 bg-white">
         <div className="flex flex-col items-center gap-3 mb-14">
-          <IoLocationOutline className="text-4xl text-gray-400" />
+          <IoLocationOutline className="text-4xl text-green-600" />
           <h2 className="text-3xl md:text-4xl font-bold  font-playfair text-center text-black">
             Who We Are
           </h2>
