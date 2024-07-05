@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Montserrat, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/NavBar";
+import Footer from "@/components/Footer";
 
 const montserrat  = Montserrat({ 
  subsets: ["latin"],
@@ -30,6 +31,7 @@ export default function RootLayout({
       <body className={`${playfair.variable} ${montserrat.variable} font-montserrat`}>
         <NavBar />
         {children}
+        <Footer/>
       </body>
     </html>
   );
