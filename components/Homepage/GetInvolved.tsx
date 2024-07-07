@@ -27,7 +27,7 @@ const GetInvolved = () => {
           We Challenge You to Get Involved and Make a Difference:
         </h3>
         <ul className=" flex flex-col items-center justify-center gap-10  text-black w-full  ">
-          <div className="flex *:w-[20rem] gap-5 *:flex *:flex-col *:gap-1">
+          <div className="flex *:w-[20rem] gap-5 *:flex *:flex-col *:gap-1 *:border-2 *:p-5 *:border-gray-700">
             <li>
               <strong>Become a Member:</strong>
               <p>
@@ -54,7 +54,7 @@ const GetInvolved = () => {
             </li>
           </div>
 
-          <div className="flex *:w-[20rem] gap-5 *:flex *:flex-col *:gap-1">
+          <div className="flex *:w-[20rem] gap-5 *:flex *:flex-col *:gap-1 *:border-2 *:p-5 *:border-gray-700">
             <li className="col-start-[1.5]">
               <strong>Collaborate with Us:</strong>
               <p>
