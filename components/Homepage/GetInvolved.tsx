@@ -1,8 +1,10 @@
 import React from "react";
+import { FaPeopleGroup } from "react-icons/fa6";
+import { IoLocationOutline, IoPeople } from "react-icons/io5";
 
 const GetInvolved = () => {
   return (
-    <section className="flex flex-col bg-gray-50 items-center px-10 md:px-20 py-8 ">
+    <section className="flex flex-col  items-center px-10 md:px-20 py-8 ">
       <h2 className="text-3xl md:text-4xl font-bold mb-10 font-playfair text-center text-black">
         Get{" "}
         <span className=" underline underline-offset-2 decoration-green-600 decoration-2">
@@ -10,7 +12,7 @@ const GetInvolved = () => {
         </span>
       </h2>
 
-      <div>
+      <div  className="flex flex-col items-center mb-10">
         <h3 className="text-xl md:text-2xl font-semibold mb-4 text-black">
           Join Us in Creating a Better Future for All
         </h3>
@@ -22,27 +24,29 @@ const GetInvolved = () => {
         </p>
       </div>
 
-      <section>
-        <h3 className="text-xl md:text-2xl font-semibold mb-4 text-black">
+      <section className="flex flex-col gap-3 mb-10 items-center">
+        <h3 className="text-xl md:text-xl font-semibold mb-4 text-black">
           We Challenge You to Get Involved and Make a Difference:
         </h3>
-        <ul className=" flex flex-col items-center justify-center gap-10  text-black w-full  ">
-          <div className="flex *:w-[20rem] gap-5 *:flex *:flex-col *:gap-1 *:border-2 *:p-5 *:border-gray-700">
-            <li>
+        <ul className=" flex flex-col items-center justify-center gap-5  text-black w-full  ">
+          <div className="flex *:w-[20rem] gap-5 *:h-[14rem] *:flex *:flex-col *:gap-2 *:border-2 *:p-5 *:border-gray-700 *:rounded-2xl">
+            <li className="flex flex-col">
+            <IoLocationOutline className="text-4xl text-green-600" />
+            <FaPeopleGroup className=" bg-red-600 text-3xl" />
               <strong>Become a Member:</strong>
+              <IoPeople className="text-black bg-red-600 text-3xl" />
               <p>
-                Join our community committed to promoting transparency,
-                integrity, and equity in governance. Access exclusive resources,
-                events, and opportunities to engage with thought leaders and
-                policymakers.
+                Join our community to promote transparency, integrity, and
+                equity in governance. Access exclusive resources, events, and
+                opportunities to engage with leaders and policymakers.
               </p>
             </li>
             <li>
               <strong>Support Our Initiatives:</strong>
               <p>
-                Drive meaningful change through donations, volunteering, or
-                spreading the word. Your support is crucial to advocating for
-                policy reforms and implementing transformational projects.
+                Drive change through donations, volunteering, or spreading the
+                word. Your support is vital for policy reforms and
+                transformational projects.
               </p>
             </li>
             <li>
@@ -54,15 +58,15 @@ const GetInvolved = () => {
             </li>
           </div>
 
-          <div className="flex *:w-[20rem] gap-5 *:flex *:flex-col *:gap-1 *:border-2 *:p-5 *:border-gray-700">
-            <li className="col-start-[1.5]">
+          <div className="flex *:h-[14rem] *:w-[20rem] gap-5 *:flex *:flex-col *:gap-2 *:border-2 *:p-5 *:border-gray-700 *:rounded-2xl">
+            <li className="">
               <strong>Collaborate with Us:</strong>
               <p>
                 If you represent an organization, institution, or community
                 group, collaborate with TGF to amplify our collective impact.
               </p>
             </li>
-            <li className="col-start-2">
+            <li className="">
               <strong>Stay Informed:</strong>
               <p>
                 Subscribe to our newsletter and follow us on social media to
@@ -73,7 +77,7 @@ const GetInvolved = () => {
         </ul>
       </section>
 
-      <section>
+      <section className="flex flex-col gap-3 mb-10 items-center">
         <h3 className="text-xl md:text-2xl font-semibold mb-4 text-black">
           Why Your Involvement Matters
         </h3>
