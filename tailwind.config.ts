@@ -13,9 +13,7 @@ const config: Config = {
         montserrat : ['var(--font-montserrat)'],
       },
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        'custom-gradient': 'linear-gradient(to bottom left, rgba(209, 250, 229, 1) 1%, rgba(255, 255, 255, 1) 97%, rgba(209, 250, 229, 1) 99%)',
       },
     },
   },
