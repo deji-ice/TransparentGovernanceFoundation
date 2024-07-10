@@ -13,14 +13,14 @@ export default function NavBar() {
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 lg:py-2 ">
             <Link href={"/"}>
-              {/* <Image
-                src={`https://res.cloudinary.com/dhvwthnzq/image/upload/v1692882879/boldo/Logo_1_isvimz.png`}
+              <Image
+                src={`https://res.cloudinary.com/dhvwthnzq/image/upload/v1720648526/Transparent%20Governance%20Foundation/tgflogo1_uokimu.png`}
                 alt="logo ice"
-                className="invert"
-                height={100}
-                width={150}
-              /> */}
-              <h1 className="text-3xl font-semibold font-playfair">TGF</h1>
+                className="h-16 w-16"
+                height={400}
+                width={400}
+              />
+              {/* <h1 className="text-3xl font-semibold font-playfair">TGF</h1> */}
             </Link>
 
             <div className="lg:hidden">
