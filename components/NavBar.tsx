@@ -77,7 +77,7 @@ export default function NavBar() {
                 </Link>
               </li>
               <li className="text-green-800 md:min-w-fit hover:text-[#ffffff] hover:underline underline-offset-4 ">
-                <Link href="#experience">
+                <Link href="/Membership">
                   <button onClick={() => setNavbar(!navbar)}>Memebership</button>
                 </Link>
               </li>
