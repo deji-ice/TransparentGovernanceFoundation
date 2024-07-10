@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <main className="flex flex-col items-center justify-between mt-14">
      <HeroSection/>
-     <div className="bg-gradient-to-bl from-green-100 from-1 via-white via-80 to-0.2 to-green-100">
+     <div className=" ">
      <Introduction/>
      {/* <Mission/> */}
      <GetInvolved/>
