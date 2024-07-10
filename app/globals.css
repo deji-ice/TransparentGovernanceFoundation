@@ -2,3 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
+.clip-cirlce {
+    clip-path: circle(50% at 50% 0);
+}
