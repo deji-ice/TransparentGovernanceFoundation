@@ -8,15 +8,22 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      display: ["group-hover"],
+      clipPath: {
+        'ellipse-top': 'ellipse(50% 30% at center top)',
+      },
       fontFamily: {
         playfair: ['var(--font-playfair-display)'],
-        montserrat : ['var(--font-montserrat)'],
+        montserrat: ['var(--font-montserrat)'],
       },
       backgroundImage: {
         'custom-gradient': 'linear-gradient(to bottom left, rgba(209, 250, 229, 1) 1%, rgba(255, 255, 255, 1) 97%, rgba(209, 250, 229, 1) 99%)',
       },
     },
   },
-  plugins: [],
+  plugins: [require('tailwind-clip-path'),],
+  variants: {
+    clipPath: ['responsive'],
+  },
 };
 export default config;
