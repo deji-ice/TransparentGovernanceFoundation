@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-
+ 
 const Mission = () => {
   return (
     <div className="flex flex-row-reverse justify-center gap-20 items-start px-20 py-16">
