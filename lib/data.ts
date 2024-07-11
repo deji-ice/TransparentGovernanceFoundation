@@ -24,6 +24,7 @@ export const leaders: Leader[] = [
   {
     id: 2,
     title: "The Hon. Vice Chairman",
+    name: "Dr. Akinwale Orunesajo, DM",
     pic: "https://plus.unsplash.com/premium_photo-1693258698597-1b2b1bf943cc?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     portfolio: "[portfolio]",
     quotes: [
@@ -33,22 +34,23 @@ export const leaders: Leader[] = [
   },
   {
     id: 3,
-    title: "The Hon. Secretary General",
+    title: "Hon. Secretary General",
+    name:"Dr. Samuel Afolayan, RPP, MCIP",
     pic: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     portfolio: "[portfolio]",
     quote: "The strength of our organization lies in our commitment to clarity and inclusivity. By fostering open communication and collaboration, we empower citizens and create a foundation for lasting change."
   },
   {
     id: 4,
-    title: "The Hon. Director of Finance",
-    name: "Hon. Clement",
+    title: "Hon. Director of Finance",
+    name: "Mr. Clement Babalola",
     pic: "https://images.unsplash.com/photo-1632765854612-9b02b6ec2b15?q=80&w=1372&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     portfolio: "Hon. Clement oversees the financial health of TGF. With a background in finance, banking, and multinational banks management, he ensures that our resources are used efficiently and transparently. His work guarantees that every donation and grant is maximized for impact.",
     quote: "Transparency in finances builds trust. It shows our supporters that we are committed to using their contributions responsibly."
   },
   {
     id: 5,
-    title: "The Hon. Director of Communication",
+    title: "The Hon. Director of Comm.",
     name: "Mrs. Hon. Opeyemi",
     pic: "https://images.unsplash.com/photo-1522556189639-b150ed9c4330?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     portfolio: "Mrs. Hon. Opeyemi is the voice behind TGF’s public communications. With a career in IT and collaboration with civil rights and social group activists, she manages our outreach efforts, ensuring that our message of transparency and good governance reaches a wide audience. Her storytelling skills highlight the impact of our work and engage supporters.",

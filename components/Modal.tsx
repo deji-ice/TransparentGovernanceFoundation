@@ -19,7 +19,7 @@ const Modal = ({
           <div className="flex cursor-default gap-2 top-10 bg-white rounded-lg relative">
             <button
               onClick={() => setShowModal(false)}
-              className="btn h-12 w-12 bg-white text-green-500 rounded-full font-semibold btn-sm btn-circle btn-ghost absolute right-[-15px] top-[-10px]"
+              className="btn h-12 w-12 bg-white border border-slate-400 text-green-500 rounded-full font-semibold btn-sm btn-circle btn-ghost absolute right-[-15px] top-[-10px]"
             >
               ✕
             </button>
