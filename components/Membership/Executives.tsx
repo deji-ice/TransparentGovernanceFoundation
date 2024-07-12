@@ -7,11 +7,11 @@ import Modal from "../Modal";
 
 const Executives = ({ leaders }: { leaders: Leader[] }) => {
   const [showModal, setShowModal] = useState(false);
-  const [userData, setUserData] = useState<Leader | null>(null);
+  const [userData, setUserData] = useState<Leader>({} as Leader);
 
   const handleToggle = (i: React.SetStateAction<Leader | null>) => {
     setShowModal(!showModal);
-    setUserData(i);
+    setUserData(i as Leader);
     console.log(showModal, "showModal");
   };
   return (
@@ -20,7 +20,7 @@ const Executives = ({ leaders }: { leaders: Leader[] }) => {
         The Executives
       </h3>
       <hr className="w-screen border-b border-b-black" />
-      <div className="mt-16 grid grid-cols-4  justify-center mb-10 gap-10 h-full ">
+      <div className="mt-16 grid grid-cols-5  justify-center mb-10 gap-10 h-full ">
         {leaders.map((item: Leader) => (
           <div
             key={item.id}
@@ -40,7 +40,7 @@ const Executives = ({ leaders }: { leaders: Leader[] }) => {
                 height={300}
                 src={item.pic ?? ""}
                 alt={item.name ?? ""}
-                className="rounded-none transition-all duration-700 ease-in-out group-hover:rounded-2xl"
+                className="rounded-none h-[300px] transition-all duration-700 ease-in-out group-hover:rounded-2xl"
               />
             </div>
 

@@ -4,7 +4,7 @@ const JoinUs = () => {
   return (
     <div className="flex flex-col items-center px-32 my-10 gap-10">
       <h3 className="font-playfair text-2xl font-semibold">Join Us</h3>
-      <p>
+      <p className="text-center">
         Our members are dedicated professionals who are passionate about making
         a difference. If you share our commitment to good governance,
         transparency, and social justice, we invite you to join us.<br/> Visit our
