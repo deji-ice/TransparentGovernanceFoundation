@@ -6,7 +6,7 @@ const Contact = () => {
       <section className="flex flex-col items-center px-10 md:px-20 bg-white">
         <div className="flex flex-col items-center gap-3 mb-14">
           <h2 className="text-2xl md:text-3xl font-semibold font-playfair text-center text-black">
-            Contact Us
+            Contact Us 
           </h2>
         </div>
         <p className="mb-8 text-center text-black max-w-6xl px-20">
