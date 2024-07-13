@@ -10,7 +10,7 @@ const Contact = () => {
           </h2>
         </div>
         <p className="mb-8 text-center text-black max-w-6xl px-20">
-          The Transparent Governance Foundation aims to promote good governance through integrity, transparency, accountability, civic engagement, inclusivity, education, research, partnerships, and monitoring public project execution. Reach out to us with your questions, suggestions, or to get involved.
+          The Transparent Governance Foundation  aims to promote good governance through integrity, transparency, accountability, civic engagement, inclusivity, education, research, partnerships, and monitoring public project execution. Reach out to us with your questions, suggestions, or to get involved.
         </p>
         <form className="bg-white p-8 my-10 rounded-lg border-2  border-black -lg max-w-md w-full font-montserrat">
           <div className="mb-6">
