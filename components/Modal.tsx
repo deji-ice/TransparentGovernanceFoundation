@@ -35,7 +35,7 @@ const Modal = ({
                 <p> {data.title}</p>
               </span>
               <div className="h-[20rem] w-[20rem] overflow-y-scroll ">
-                <p className="text-xs tracking-wide leading-5 px-2">{data.bio}</p>
+                <p className="text-xs tracking-wide leading-5 px-2">{data?.quotes?.[0] || data.quote}</p>
               </div>
             </div>
           </div>
