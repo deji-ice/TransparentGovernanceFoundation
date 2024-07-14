@@ -10,7 +10,7 @@ const Membership = () => {
       <div className="flex flex-col items-center gap-12">
         <p className="px-32">
           At the Transparent Governance Foundation (TGF), our members are the
-          heart and soul of our mission to promote good governance,
+          heart and soul of our mission to promote good governance, 
           accountability, and social justice. We are proud to introduce you to
           some of the dedicated individuals who are working tirelessly to create
           a better future for all. Each member brings unique skills,
