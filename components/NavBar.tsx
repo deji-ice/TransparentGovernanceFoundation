@@ -16,9 +16,9 @@ export default function NavBar() {
               <Image
                 src={`https://res.cloudinary.com/dhvwthnzq/image/upload/v1720648526/Transparent%20Governance%20Foundation/tgflogo1_uokimu.png`}
                 alt="logo ice"
-                className="h-16 w-16"
-                height={400}
-                width={400}
+                className="h-14 w-14"
+                height={300}
+                width={300}
               />
               {/* <h1 className="text-3xl font-semibold font-playfair">TGF</h1> */}
             </Link>
@@ -87,7 +87,7 @@ export default function NavBar() {
                 </Link>
               </li>
               <li className="text-green-800 md:min-w-fit hover:text-[#ffffff] hover:underline underline-offset-4 ">
-                <Link href="#contactUs">
+                <Link href="/Contact">
                   <button onClick={() => setNavbar(!navbar)}>Contact Us</button>
                 </Link>
               </li>

@@ -9,7 +9,7 @@ export default function Home() {
     <main className="flex flex-col items-center justify-between mt-14">
      <HeroSection/>
      <div className=" ">
-     <Introduction/>
+     <Introduction/> 
      {/* <Mission/> */}
      <GetInvolved/>
      </div>
