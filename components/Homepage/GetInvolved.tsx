@@ -1,6 +1,16 @@
 import React from "react";
-import { FaPeopleGroup } from "react-icons/fa6";
+import {
+  FaHandshake,
+  FaPeopleGroup,
+  FaUser,
+  FaUserPlus,
+} from "react-icons/fa6";
 import { IoLocationOutline, IoPeople } from "react-icons/io5";
+import {
+  FaArrowCircleRight,
+  FaHandsHelping,
+  FaNewspaper,
+} from "react-icons/fa";
 
 const GetInvolved = () => {
   return (
@@ -12,7 +22,7 @@ const GetInvolved = () => {
         </span>
       </h2>
 
-      <div  className="flex flex-col items-center mb-10">
+      <div className="flex flex-col items-center mb-10">
         <h3 className="text-xl md:text-2xl font-semibold mb-4 text-black">
           Join Us in Creating a Better Future for All
         </h3>
@@ -30,28 +40,34 @@ const GetInvolved = () => {
         </h3>
         <ul className=" flex flex-col items-center justify-center gap-5  text-black w-full  ">
           <div className="flex *:w-[20rem] gap-5 *:h-[14rem] *:flex *:flex-col *:gap-2 *:border-2 *:p-5 *:border-gray-700 *:rounded-2xl">
-            <li className="flex flex-col">
-            <IoLocationOutline className="text-4xl text-green-600" />
-            <FaPeopleGroup className=" bg-red-600 text-3xl" />
+            <li className="flex flex-col h-fit">
+              <span>
+                <FaUserPlus className=" text-2xl text-green-700" />{" "}
+              </span>
               <strong>Become a Member:</strong>
-              <IoPeople className="text-black bg-red-600 text-3xl" />
-              <p>
+              <p className="text-sm">
                 Join our community to promote transparency, integrity, and
                 equity in governance. Access exclusive resources, events, and
                 opportunities to engage with leaders and policymakers.
               </p>
             </li>
             <li>
+              <span>
+                <FaHandsHelping className=" text-2xl text-green-700" />
+              </span>
               <strong>Support Our Initiatives:</strong>
-              <p>
+              <p className="text-sm">
                 Drive change through donations, volunteering, or spreading the
                 word. Your support is vital for policy reforms and
                 transformational projects.
               </p>
             </li>
             <li>
+              <span>
+                <FaUser className=" text-2xl text-green-700" />
+              </span>
               <strong>Participate in Our Programs:</strong>
-              <p>
+              <p className="text-sm">
                 Engage in workshops, seminars, and advocacy campaigns. Equip
                 yourself with the tools to actively shape our nation's future.
               </p>
@@ -60,15 +76,21 @@ const GetInvolved = () => {
 
           <div className="flex *:h-[14rem] *:w-[20rem] gap-5 *:flex *:flex-col *:gap-2 *:border-2 *:p-5 *:border-gray-700 *:rounded-2xl">
             <li className="">
+              <span>
+                <FaHandshake className=" text-2xl text-green-700" />
+              </span>
               <strong>Collaborate with Us:</strong>
-              <p>
+              <p className="text-sm">
                 If you represent an organization, institution, or community
                 group, collaborate with TGF to amplify our collective impact.
               </p>
             </li>
             <li className="">
+              <span>
+                <FaNewspaper className=" text-2xl  text-green-700 " />
+              </span>
               <strong>Stay Informed:</strong>
-              <p>
+              <p className="text-sm">
                 Subscribe to our newsletter and follow us on social media to
                 stay updated on our activities, events, and advocacy efforts.
               </p>
