@@ -11,6 +11,7 @@ import {
   FaHandsHelping,
   FaNewspaper,
 } from "react-icons/fa";
+import { items } from "@/lib/data";
 
 const GetInvolved = () => {
   return (
@@ -22,80 +23,25 @@ const GetInvolved = () => {
         </span>
       </h2>
 
-      <div className="flex flex-col items-center mb-10">
-        <h3 className="text-xl md:text-2xl font-semibold mb-4 text-black">
-          Join Us in Creating a Better Future for All
-        </h3>
-        <p className="mb-6 text-center text-black max-w-5xl">
-          At TGF, we believe in the power of every individual to contribute to a
-          just, fair, and transparent society. Upholding good governance
-          principles, we ensure every voice is heard and every citizen can
-          participate in decision-making processes.
-        </p>
-      </div>
+
 
       <section className="flex flex-col gap-3 mb-10 items-center">
         <h3 className="text-xl md:text-xl font-semibold mb-4 text-black">
           We Challenge You to Get Involved and Make a Difference:
         </h3>
-        <ul className=" flex flex-col items-center justify-center gap-5  text-black w-full  ">
-          <div className="flex *:w-[20rem] gap-5 *:h-[14rem] *:flex *:flex-col *:gap-2 *:border-2 *:p-5 *:border-gray-700 *:rounded-2xl">
-            <li className="flex flex-col h-fit">
-              <span>
-                <FaUserPlus className=" text-2xl text-green-700" />{" "}
-              </span>
-              <strong>Become a Member:</strong>
-              <p className="text-sm">
-                Join our community to promote transparency, integrity, and
-                equity in governance. Access exclusive resources, events, and
-                opportunities to engage with leaders and policymakers.
-              </p>
+        <ul className="grid grid-cols-3  items-center justify-center gap-5 text-black w-full">
+          {items.map((item, index) => (
+            <li
+              key={index}
+              className="flex flex-col justify-between h-[16rem] w-[20rem] gap-2 border p-8 border-gray-700/10 rounded-2xl"
+            >
+              <span className="text-3xl text-green-700 bg-gray-100 w-fit h-fit rounded-full p-3">{item.icon}</span>
+              <div className="flex flex-col gap-2">
+                <strong>{item.title}</strong>
+                <p className="text-sm">{item.description}</p>
+              </div>
             </li>
-            <li>
-              <span>
-                <FaHandsHelping className=" text-2xl text-green-700" />
-              </span>
-              <strong>Support Our Initiatives:</strong>
-              <p className="text-sm">
-                Drive change through donations, volunteering, or spreading the
-                word. Your support is vital for policy reforms and
-                transformational projects.
-              </p>
-            </li>
-            <li>
-              <span>
-                <FaUser className=" text-2xl text-green-700" />
-              </span>
-              <strong>Participate in Our Programs:</strong>
-              <p className="text-sm">
-                Engage in workshops, seminars, and advocacy campaigns. Equip
-                yourself with the tools to actively shape our nation's future.
-              </p>
-            </li>
-          </div>
-
-          <div className="flex *:h-[14rem] *:w-[20rem] gap-5 *:flex *:flex-col *:gap-2 *:border-2 *:p-5 *:border-gray-700 *:rounded-2xl">
-            <li className="">
-              <span>
-                <FaHandshake className=" text-2xl text-green-700" />
-              </span>
-              <strong>Collaborate with Us:</strong>
-              <p className="text-sm">
-                If you represent an organization, institution, or community
-                group, collaborate with TGF to amplify our collective impact.
-              </p>
-            </li>
-            <li className="">
-              <span>
-                <FaNewspaper className=" text-2xl  text-green-700 " />
-              </span>
-              <strong>Stay Informed:</strong>
-              <p className="text-sm">
-                Subscribe to our newsletter and follow us on social media to
-                stay updated on our activities, events, and advocacy efforts.
-              </p>
-            </li>
-          </div>
+          ))}
         </ul>
       </section>
 

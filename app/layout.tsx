@@ -4,16 +4,16 @@ import "./globals.css";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 
-const montserrat  = Montserrat({ 
- subsets: ["latin"],
- variable: "--font-montserrat",
- display: 'swap',
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  variable: "--font-montserrat",
+  display: "swap",
 });
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
   variable: "--font-playfair-display",
-  display: 'swap',
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -28,10 +28,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${playfair.variable} ${montserrat.variable} font-montserrat`}>
+      <link
+        rel="icon"
+        href="./logo.svg"
+        type="image/svg"
+    sizes="any"
+      />
+      <body
+        className={`${playfair.variable} ${montserrat.variable} font-montserrat`}
+      >
         <NavBar />
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );

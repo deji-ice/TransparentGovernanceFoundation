@@ -14,7 +14,7 @@ export default function NavBar() {
           <div className="flex items-center justify-between py-3 md:py-5 lg:py-2 ">
             <Link href={"/"}>
               <Image
-                src={`https://res.cloudinary.com/dhvwthnzq/image/upload/v1720648526/Transparent%20Governance%20Foundation/tgflogo1_uokimu.png`}
+                src={`https://res.cloudinary.com/dhvwthnzq/image/upload/v1734355553/Transparent%20Governance%20Foundation/IMG_8356_xtbhut.png`}
                 alt="logo ice"
                 className="h-14 w-14"
                 height={300}
@@ -73,12 +73,14 @@ export default function NavBar() {
             >
               <li className="text-green-800  md:min-w-fit hover:text-[#ffffff] hover:underline underline-offset-4  ">
                 <Link href="/AboutUs" onClick={() => setNavbar(!navbar)}>
-                 Who we are
+                  Who we are
                 </Link>
               </li>
               <li className="text-green-800 md:min-w-fit hover:text-[#ffffff] hover:underline underline-offset-4 ">
                 <Link href="/Membership">
-                  <button onClick={() => setNavbar(!navbar)}>Memebership</button>
+                  <button onClick={() => setNavbar(!navbar)}>
+                    Memebership
+                  </button>
                 </Link>
               </li>
               <li className="text-green-800 md:min-w-fit hover:text-[#ffffff] hover:underline underline-offset-4 ">
