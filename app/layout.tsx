@@ -41,7 +41,7 @@ export default function RootLayout({
     sizes="any"
       />
       <body
-        className={`${playfair.variable} ${montserrat.variable} ${dm_sans.variable} overflow-x-clip bg-red-700 font-montserrat`}
+        className={`${playfair.variable} ${montserrat.variable} ${dm_sans.variable} bg-white font-montserrat`}
       >
         <NavBar />
         {children}
