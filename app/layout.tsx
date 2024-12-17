@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Montserrat, Playfair_Display } from "next/font/google";
+import { DM_Sans, Inter, Montserrat, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
@@ -13,6 +13,12 @@ const montserrat = Montserrat({
 const playfair = Playfair_Display({
   subsets: ["latin"],
   variable: "--font-playfair-display",
+  display: "swap",
+});
+
+const  dm_sans = DM_Sans({
+  subsets: ["latin"],
+  variable: "--font-dm-sans",
   display: "swap",
 });
 
@@ -35,11 +41,11 @@ export default function RootLayout({
     sizes="any"
       />
       <body
-        className={`${playfair.variable} ${montserrat.variable} font-montserrat`}
+        className={`${playfair.variable} ${montserrat.variable} ${dm_sans.variable} overflow-x-clip bg-red-700 font-montserrat`}
       >
         <NavBar />
         {children}
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );

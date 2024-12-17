@@ -16,13 +16,14 @@ const config: Config = {
       fontFamily: {
         playfair: ['var(--font-playfair-display)'],
         montserrat: ['var(--font-montserrat)'],
+        dm_sans: ['var(--font-dm-sans)'],
       },
       backgroundImage: {
         'custom-gradient': 'linear-gradient(to bottom left, rgba(209, 250, 229, 1) 1%, rgba(255, 255, 255, 1) 97%, rgba(209, 250, 229, 1) 99%)',
       },
     },
   },
-  plugin: [daisyui],
+  plugins: [daisyui],
   variants: {
     clipPath: ['responsive'],
   },

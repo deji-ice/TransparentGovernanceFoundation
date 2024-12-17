@@ -1,14 +1,15 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
-
+import { usePathname } from "next/navigation";
 import Image from "next/image";
 
 export default function NavBar() {
   const [navbar, setNavbar] = useState<boolean>(false);
+  const pathname = usePathname();
 
   return (
-    <nav className="w-full bg-white text-black shadow fixed z-30 top-0 font-programme ">
+    <nav className="w-screen bg-white text-black shadow fixed z-30 top-0 font-programme ">
       <div className="justify-between px-4 mx-auto md:max-w-7xl md:items-center lg:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 lg:py-2 ">
@@ -20,7 +21,6 @@ export default function NavBar() {
                 height={300}
                 width={300}
               />
-              {/* <h1 className="text-3xl font-semibold font-playfair">TGF</h1> */}
             </Link>
 
             <div className="lg:hidden">
@@ -61,63 +61,37 @@ export default function NavBar() {
             </div>
           </div>
         </div>
-        <div>
+        <div >
           <div
             className={`flex-1 justify-self-center pb-3 mb-4 mt-8 lg:block lg:pb-0 md:mt-3 ${
               navbar ? "block" : "hidden"
             }`}
           >
             <ul
-              className="items-center justify-center md:text-sm space-y-8 md:ml-[32rem] md:flex
-                            lg:flex-row md:flex-col lg:space-x-6 lg:mr-10 lg:space-y-0 md:space-x-10 md:space-y-8"
+              className="items-center justify-center md:text-xl lg:text-base space-y-8 lg:flex 
+                    lg:flex-row lg:space-x-6 lg:mr-10 lg:space-y-0  md:space-y-10 transition-all duration-300 ease-in-out"
             >
-              <li className="text-green-800  md:min-w-fit hover:text-[#ffffff] hover:underline underline-offset-4  ">
-                <Link href="/AboutUs" onClick={() => setNavbar(!navbar)}>
-                  Who we are
+              {[
+              { href: "/", label: "Home" },
+              { href: "/AboutUs", label: "Who we are" },
+              { href: "/Membership", label: "Membership" },
+              { href: "#projects", label: "Programs" },
+              { href: "/Contact", label: "Contact Us" },
+              ].map((link) => (
+              <li
+                key={link.href}
+                className={`text-green-800 md:min-w-fit hover:text-green-900 hover:underline underline-offset-4 transition-all  duration-300 ease-in-out ${
+                pathname === link.href ? "font-semibold" : ""
+                }`}
+              >
+                <Link href={link.href}>
+                <p onClick={() => setNavbar(!navbar)}>{link.label}</p>
                 </Link>
               </li>
-              <li className="text-green-800 md:min-w-fit hover:text-[#ffffff] hover:underline underline-offset-4 ">
-                <Link href="/Membership">
-                  <button onClick={() => setNavbar(!navbar)}>
-                    Memebership
-                  </button>
-                </Link>
-              </li>
-              <li className="text-green-800 md:min-w-fit hover:text-[#ffffff] hover:underline underline-offset-4 ">
-                <Link href="#projects">
-                  <button onClick={() => setNavbar(!navbar)}>Projects</button>
-                </Link>
-              </li>
-              <li className="text-green-800 md:min-w-fit hover:text-[#ffffff] hover:underline underline-offset-4 ">
-                <Link href="/Contact">
-                  <button onClick={() => setNavbar(!navbar)}>Contact Us</button>
-                </Link>
-              </li>
+              ))}
             </ul>
-            {/* <div className="mt-5 space-y-2 space-x-2 flex items-center lg:hidden">
-                            <button className="w-1/2 px-4 py-2 text-center text-[#068353]
-                            bg-white rounded-3xl  border-[#068353] border-[0.3px] mx-10 pl-3 p-1 items-center shadow hover:bg-[#068353] hover:text-black ">
-                                Sign in
-                            </button>
-
-                            <button className="w-1/2 px-4 py-2 text-center text-black 
-                            bg-[#068353] mx-10 pl-3 p-1 items-center  rounded-3xl shadow hover:bg-green-600" >
-                                Sign up
-                            </button>
-
-                        </div> */}
           </div>
         </div>
-        {/* <div className="hidden space-x-2  lg:flex md:hidden ">
-                    <button className="inline-block w-[6rem] py-2 text-center text-[#068353] border-[#068353] border-[0.3px]
-                     bg-white rounded-3xl md:text-sm shadow hover:bg-[#068353] hover:text-black">
-                        Sign in
-                    </button>
-
-                    <button className="inline-block py-2 text-sm  w-[6rem] text-center text-black bg-[#068353] rounded-3xl shadow hover:bg-green-600" >
-                        Sign up
-                    </button>
-                </div> */}
       </div>
     </nav>
   );
