@@ -11,7 +11,7 @@ const GetInvolved: React.FC = () => {
   return (
     <section className="flex flex-col items-center px-6 md:px-20 py-12 bg-white">
       {/* Section Heading */}
-      <h2 className="text-3xl md:text-4xl font-bold mb-10 font-dm_sans text-center text-gray-900">
+      <h2 className="text-2xl lg:text-3xl font-bold mb-10 font-dm_sans text-center text-gray-900">
         Get{" "}
         <span className="underline decoration-green-600 underline-offset-4">
           Involved
@@ -20,7 +20,7 @@ const GetInvolved: React.FC = () => {
 
       {/* Engagement Options */}
       <div className="flex flex-col gap-6 mb-12 items-center w-full">
-        <h3 className="text-lg md:text-xl font-semibold text-center text-gray-800">
+        <h3 className="md:text-lg  text-base font-semibold text-center text-gray-800">
           We Challenge You to Get Involved and Make a Difference:
         </h3>
         <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
