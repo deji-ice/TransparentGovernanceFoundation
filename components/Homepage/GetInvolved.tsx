@@ -1,7 +1,13 @@
 import React from "react";
 import { items } from "@/lib/data";
 
-const GetInvolved = () => {
+interface Item {
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+}
+
+const GetInvolved: React.FC = () => {
   return (
     <section className="flex flex-col items-center px-6 md:px-20 py-12 bg-white">
       {/* Section Heading */}
@@ -18,7 +24,7 @@ const GetInvolved = () => {
           We Challenge You to Get Involved and Make a Difference:
         </h3>
         <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
-          {items.map((item, index) => (
+          {items.map((item: Item, index: number) => (
             <li
               key={index}
               className="flex flex-col justify-between h-64 p-6 border border-gray-100 rounded-2xl shadow-sm hover:shadow-md transition duration-300 bg-white"
