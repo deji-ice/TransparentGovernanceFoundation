@@ -20,7 +20,7 @@ const Executives = ({ leaders }: { leaders: Leader[] }) => {
         The Executives
       </h3>
       <hr className="w-screen border-b border-b-black" />
-      <div className="mt-16 grid grid-cols-5  justify-center mb-10 gap-10 h-full ">
+      <div className="mt-16 grid lg:grid-cols-5 md:grid-cols-3 px-3 grid-cols-1 justify-center mb-10 gap-10 h-full ">
         {leaders.map((item: Leader) => (
           <div
             key={item.id}
