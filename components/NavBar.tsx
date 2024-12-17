@@ -9,7 +9,7 @@ export default function NavBar() {
   const pathname = usePathname();
 
   return (
-    <nav className="w-screen bg-white text-black shadow fixed py-3 z-30 top-0 font-programme">
+    <nav className="w-screen bg-white text-black shadow fixed py-2 z-50 top-0 font-programme">
       <div className="flex justify-between items-center px-4 md:px-14 mx-auto md:max-w-7xl">
         {/* Logo and NavLinks */}
         <div className="flex items-center gap-6">
@@ -35,7 +35,7 @@ export default function NavBar() {
             ].map((link) => (
               <li
                 key={link.href}
-                className={`text-green-800 hover:text-green-900 hover:underline underline-offset-4 transition-all duration-300 ease-in-out ${
+                className={`text-green-800 hover:text-green-900 hover:underline hover:transition hover:ease-in-out hover:duration-300 underline-offset-4 transition-all duration-300 ease-in-out ${
                   pathname === link.href ? "font-semibold" : ""
                 }`}
               >
@@ -55,7 +55,7 @@ export default function NavBar() {
         </div>
 
         {/* Hamburger Menu Button */}
-        <div className="lg:hidden">
+        <div className=" flex lg:hidden">
           <button
             className="p-2 text-black rounded-md outline-none focus:border-gray-400 focus:border"
             onClick={() => setNavbar(!navbar)}
