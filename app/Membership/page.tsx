@@ -35,7 +35,7 @@ const Membership = () => {
           {/* Detailed Description */}
           <p className="px-4 md:px-8 lg:px-12 mb-8 md:mb-16 text-xs md:text-sm leading-relaxed max-w-3xl mx-auto">
             These visionary members bring diverse skills and experiences to
-            support TGF's mission of good governance and transparency. Their
+            support TGF&apos;s mission of good governance and transparency. Their
             contributions are instrumental to our collective impact.
           </p>
         </div>
