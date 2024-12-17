@@ -3,7 +3,7 @@ import React from "react";
 
 const AboutUs = () => {
   return (
-    <section className="flex flex-col items-center justify-center w-screen  gap-14 py-10 px-5 bg-gray-50">
+    <section className="flex flex-col items-center justify-center w-screen rounded-b-[3rem] gap-14 py-10 px-5 bg-white">
       {/* Section Title */}
       <h2 className="text-2xl lg:text-3xl font-semibold text-center font-dm_sans text-gray-800">
         About Us
