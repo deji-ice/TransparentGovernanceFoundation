@@ -3,11 +3,11 @@ import React from "react";
 
 const Introduction = () => {
   return (
-    <div className="flex  flex-col items-center gap-14 h-[100dvh] py-10 px-20">
-      <h3 className="font-playfair text-2xl font-semibold">
+    <div className="flex bg-white flex-col items-center gap-14 h-[100dvh] py-10 px-10">
+      <h3 className="font-dm_sans text-xl text-center font-semibold">
         Introduction to Our Organization
       </h3>
-      <div className="flex justify-center gap-20 items-start ">
+      <div className="flex flex-col lg:flex-row justify-center items-center gap-20 lg:items-start ">
         <Image
           className="object-cover "
           src={
