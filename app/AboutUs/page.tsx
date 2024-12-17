@@ -2,10 +2,12 @@ import Mission from "@/components/Homepage/Mission";
 import { IoLocationOutline } from "react-icons/io5";
 import React from "react";
 import Image from "next/image";
+import Introduction from "@/components/Homepage/Introduction";
 
 const AboutUs = () => {
   return (
     <div className="flex flex-col items-center justify-between mt-24">
+      <Introduction />
       <section className="flex flex-col items-center px-10 md:px-20  bg-white">
         <div className="flex flex-row-reverse justify-center items-center gap-3 mb-14">
           <IoLocationOutline className="text-4xl text-green-600" />
@@ -13,6 +15,7 @@ const AboutUs = () => {
             Who We Are
           </h2>
         </div>
+
 
         <div className="flex gap-10 items-center">
           <Image
