@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const AboutUs = () => {
@@ -13,7 +14,7 @@ const AboutUs = () => {
       <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-20">
         {/* Left: Image */}
         <Image
-          src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+          src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt="Governance and Equity"
           width={500}
           height={400}
@@ -42,8 +43,9 @@ const AboutUs = () => {
           </p>
 
           {/* CTA Button */}
+
           <button className="bg-green-700 hover:bg-green-800 text-white px-6 py-2  shadow-md">
-            Learn More
+            <Link href="/WhoWeAre">Learn More</Link>
           </button>
         </div>
       </div>

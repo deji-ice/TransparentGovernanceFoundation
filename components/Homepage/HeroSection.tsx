@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const HeroSection = () => {
@@ -13,7 +14,7 @@ const HeroSection = () => {
         height={1000}
         width={500}
       /> */}
-      <p className="font-semibold text-center font-dm_sans md:text-xl ">
+      <p className="font-semibold text-center font-dm_sans md:text-xl">
         Empowering Communities for a Brighter Future
       </p>
       <div className="flex flex-col  gap-3 md:gap-8 justify-center items-center m">
@@ -30,8 +31,9 @@ const HeroSection = () => {
         <button className="bg-white text-green-800 px-6 py-2.5">
           Donate Now
         </button>
+
         <button className="border-white border-2 bg-green-800 px-6 py-2">
-          Know About Us
+          <Link href="/WhoWeAre">Know About Us</Link>
         </button>
       </div>
     </div>
