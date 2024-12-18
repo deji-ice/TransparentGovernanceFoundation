@@ -28,7 +28,7 @@ export default function NavBar() {
           <ul className="hidden lg:flex gap-6 lg:ml-8 items-center">
             {[
               // { href: "/", label: "Home" },
-              { href: "/AboutUs", label: "Who we are" },
+              { href: "/WhoWeAre", label: "Who we are" },
               { href: "/Membership", label: "Membership" },
               { href: "#projects", label: "Programs" },
               { href: "/Contact", label: "Contact Us" },
@@ -102,7 +102,7 @@ export default function NavBar() {
         <ul className="space-y-4">
           {[
             // { href: "/", label: "Home" },
-            { href: "/AboutUs", label: "Who we are" },
+            { href: "/WhoWeAre", label: "Who we are" },
             { href: "/Membership", label: "Membership" },
             { href: "#projects", label: "Programs" },
             { href: "/Contact", label: "Contact Us" },
