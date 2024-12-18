@@ -33,7 +33,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="bg-white">
       <link
         rel="icon"
         href="./logo.svg"
@@ -41,11 +41,14 @@ export default function RootLayout({
     sizes="any"
       />
       <body
-        className={`${playfair.variable} ${montserrat.variable} ${dm_sans.variable} bg-white font-montserrat`}
+        className={`${playfair.variable} ${montserrat.variable} ${dm_sans.variable} font-montserrat`}
       >
         <NavBar />
+        <div className="min-h-screen mt-[5rem]">
         {children}
+        </div>
         <Footer />
+        
       </body>
     </html>
   );
