@@ -6,7 +6,7 @@ import Mission from "@/components/Homepage/Mission";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-between mt-14">
+    <main className="flex flex-col items-center justify-between ">
       <HeroSection />
       <AboutUs />
       <Mission />
