@@ -13,6 +13,7 @@ const AboutUs = () => {
               alt="Group of people in a meeting"
               width={1920}
               height={1080}
+              priority
               className="md:w-full lg:w-full lg:h-full lg:object-cover"
               src={`https://images.unsplash.com/photo-1573166675921-076ea6b621ce?w=1200&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDQ3fHx8ZW58MHx8fHx8`}
             />

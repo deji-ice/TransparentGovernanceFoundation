@@ -7,6 +7,7 @@ const Progarms = () => {
     <div className="bg-white relative py-10 px-6 max-w-7xl mx-auto">
       <div className="fixed inset-0 w-full h-full">
         <Image
+          priority
           className="w-full h-full object-contain lg:object-cover"
           fill
           alt="background grid lines"

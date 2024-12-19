@@ -13,6 +13,7 @@ const HeroSection = () => {
         alt={"wave"}
         height={1000}
         width={500}
+        priority
       />
       <p className="font-semibold text-center font-dm_sans italic md:text-xl">
         Empowering Communities for a Brighter Future

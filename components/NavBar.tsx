@@ -21,6 +21,7 @@ export default function NavBar() {
               className="h-12 w-12"
               height={300}
               width={300}
+              priority
             />
           </Link>
 
