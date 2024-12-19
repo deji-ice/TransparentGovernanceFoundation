@@ -1,5 +1,6 @@
 import React from "react";
 import { items } from "@/lib/data";
+import Link from "next/link";
 
 interface Item {
   icon: React.ReactNode;
@@ -11,7 +12,7 @@ const GetInvolved: React.FC = () => {
   return (
     <section className="flex flex-col items-center px-6 md:px-20 py-12 bg-white">
       {/* Section Heading */}
-      <h2 className="text-2xl lg:text-3xl font-bold mb-10 font-dm_sans text-center text-gray-900">
+      <h2 className="text-2xl lg:text-3xl font-bold mb-7 font-dm_sans text-center text-gray-900">
         Get{" "}
         <span className="underline decoration-green-600 underline-offset-4">
           Involved
@@ -54,16 +55,13 @@ const GetInvolved: React.FC = () => {
           to thrive. By joining TGF, you stand for justice, fairness, and human
           rights protection.
         </p>
-
         {/* CTA */}
-        <a
-          href="http://www.transparentgoodgovernance.org"
+        <Link
+          href="/contact-us"
           className="bg-green-700 text-white px-6 py-3 rounded-lg hover:bg-green-900 transition duration-300"
-          target="_blank"
-          rel="noopener noreferrer"
         >
           Take Action Now
-        </a>
+        </Link>
       </div>
     </section>
   );

@@ -45,7 +45,7 @@ const AboutUs = () => {
           {/* CTA Button */}
 
           <button className="bg-green-700 hover:bg-green-800 text-white px-6 py-2  shadow-md">
-            <Link href="/WhoWeAre">Learn More</Link>
+            <Link href="/who-we-are">Learn More</Link>
           </button>
         </div>
       </div>
