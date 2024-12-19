@@ -44,7 +44,7 @@ export default function RootLayout({
         className={`${playfair.variable} ${montserrat.variable} ${dm_sans.variable} font-montserrat`}
       >
         <NavBar />
-        <div className="min-h-screen mt-[5rem]">
+        <div className="min-h-screen mt-[4rem] lg:mt-[4rem]">
         {children}
         </div>
         <Footer />
