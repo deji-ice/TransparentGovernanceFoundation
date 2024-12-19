@@ -19,6 +19,73 @@ export type Leader = {
 };
 
 
+export interface Program {
+  title: string;
+  description: string;
+  image: string;
+}
+
+
+export const programsAndProjects: Program[] = [
+  {
+    title: "Seminars and Webinars",
+    description:
+      "Interactive seminars and webinars focused on capacity building and leadership development.",
+    image:
+      `https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D`
+  },
+  {
+    title: "Democratic Orientation",
+    description:
+      "Educational programs designed to guide communities on democratic processes and societal adjustments.",
+    image:
+      `https://images.unsplash.com/photo-1570616969692-54d6ba3d0397?w=1200&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8`
+  },
+  {
+    title: "Diaspora Voting Lobby",
+    description:
+      "Advocacy efforts to ensure voting rights for diaspora citizens, fostering inclusive democratic participation.",
+    image:
+      `https://images.unsplash.com/photo-1494172961521-33799ddd43a5?w=1200&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D`
+  },
+  {
+    title: "Community Ethical Re-orientation",
+    description:
+      "Programs aimed at re-educating communities on ethical values to promote fairness and accountability.",
+    image:
+      `https://images.unsplash.com/photo-1542315099045-93937d70c67a?w=1200&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE1fHx8ZW58MHx8fHx8`
+  },
+  {
+    title: "Entrepreneurship Coaching",
+    description:
+      "Hands-on coaching and mentoring for aspiring entrepreneurs to build sustainable businesses.",
+    image:
+      `https://images.unsplash.com/photo-1709715357520-5e1047a2b691?q=80&w=3871&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D`
+  },
+  {
+    title: "E-Commerce & Tech Incubation",
+    description:
+      "Support for e-commerce initiatives and establishment of regional tech-business incubation centers.",
+    image:
+      `https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D`
+  },
+  {
+    title: "Medical Support Trips",
+    description:
+      "Collaborative medical outreach programs with AMPA & CAMPA to improve healthcare access.",
+    image:
+      `https://images.unsplash.com/photo-1576765607924-3f7b8410a787?q=80&w=3875&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D`, // Source: Shutterstock
+  },
+  {
+    title: "Agricultural Training",
+    description:
+      "Value-addition training programs for farmers to maximize agricultural productivity and profitability.",
+    image:
+      `https://res.cloudinary.com/dhvwthnzq/image/upload/v1734609183/africash/8e370a1542fbc35030c1c38957b7b9e4_zhbdbc.jpg`
+  },
+];
+
+
 export const items: Item[] = [
   {
     icon: React.createElement(FaUserPlus),
