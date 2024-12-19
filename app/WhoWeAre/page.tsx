@@ -3,6 +3,7 @@ import { IoLocationOutline } from "react-icons/io5";
 import React from "react";
 import Image from "next/image";
 import Introduction from "@/components/Homepage/Introduction";
+import JoinUs from "@/components/Membership/JoinUs";
 
 const AboutUs = () => {
   return (
@@ -51,6 +52,11 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
+      
+      {/* Join Us Section */}
+      <div className="relative z-10 w-full flex justify-center">
+        <JoinUs />
+      </div>
     </div>
   );
 };
