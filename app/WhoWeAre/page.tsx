@@ -6,54 +6,51 @@ import Introduction from "@/components/Homepage/Introduction";
 
 const AboutUs = () => {
   return (
-    <div className="flex flex-col items-center justify-between">
-      <section className="flex flex-col items-center px-10 md:px-20  bg-white">
-        <h2 className="text-2xl md:text-3xl font-bold  font-playfair text-center text-black">
-          Who We Are
-        </h2>
-
-        <div className="flex gap-10 items-center">
+    <div className="flex flex-col text-base">
+      <section className="flex flex-col  bg-white ">
+        <div className="flex gap-10 flex-col">
           <Image
-            alt="kk"
+            alt="Group of people in a meeting"
             width={584}
             height={289}
-            className="rounded-tl-[3rem]"
-            src={
-              "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1484&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            }
+            className=""
+            src={`https://images.unsplash.com/photo-1573166675921-076ea6b621ce?w=1200&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDQ3fHx8ZW58MHx8fHx8`}
           />
-          <div className="flex flex-col items-start ">
-            <p className="mb-3 text-start text-black max-w-6xl">
-              The Transparent Governance Foundation is a Non-Governmental
-              Organization dedicated to promoting good governance as a
-              cornerstone for sustainable progress, social harmony, and
-              inclusive development.
+
+          <h2 className="text-2xl md:text-3xl font-bold  mb-1 font-dm_sans text-center text-black">
+            Who We Are
+          </h2>
+          <div className="flex flex-col items-start px-8 gap-2">
+            <p className="text-start text-black max-w-6xl">
+              The Transparent Governance Foundation promotes good governance for
+              sustainable progress, social harmony, and inclusivity.
             </p>
-            <p className="mb-3 text-start text-black max-w-6xl">
-              We advance principles of transparency, accountability, and ethical
-              leadership, recognizing the critical role of governance in shaping
-              nations and communities.
-            </p>
-            <p className="mb-3 text-start text-black max-w-6xl">
-              Our mission is to strengthen institutions and empower citizens to
-              participate meaningfully in decision-making, regardless of their
-              background.
+            <p className=" text-start text-black max-w-6xl">
+              We uphold transparency, accountability, and ethical leadership,
+              shaping just and equitable communities.
             </p>
             <p className="text-start text-black max-w-6xl">
-              Inspired by diverse cultures, we strive to foster a society where
-              justice, fairness, and respect for human rights prevail.
+              Inspired by diverse cultures, we aim to foster justice, fairness,
+              and human rights for all.
+            </p>
+          </div>
+          <div className="bg-gray-50 py-10 px-6 rounded-lg shadow-md max-w-3xl mx-auto text-start">
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">Our <span className="underline decoration-green-700 underline-offset-1 decoration-2">Story</span></h2>
+            <p className="text-gray-600 mb-4">
+              Established in 2023, the Transparent Governance Foundation (TGF)
+              began with a vision to champion good governance, accountability,
+              and transparency. Rooted in justice and inclusivity, TGF empowers
+              institutions and citizens to build a fairer society.
+            </p>
+            <p className="text-gray-600">
+              Through advocacy, education, and collaboration, we unite
+              individuals and organizations to foster leadership and governance
+              excellence, working towards a brighter and more equitable future
+              for all.
             </p>
           </div>
         </div>
-
-        {/* <p className="text-center text-black max-w-6xl">
-          Drawing inspiration from the collective wisdom of diverse cultures and
-          civilizations, the Foundation aspires to foster an enlightened and
-          harmonious society where the principles of justice, fairness, and
-          respect for human rights prevail.
-        </p> */}
       </section>
-      {/* <Mission /> */}
     </div>
   );
 };
