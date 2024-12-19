@@ -28,10 +28,10 @@ export default function NavBar() {
           <ul className="hidden lg:flex gap-6 lg:ml-8 items-center">
             {[
               // { href: "/", label: "Home" },
-              { href: "/WhoWeAre", label: "Who we are" },
-              { href: "/Membership", label: "Membership" },
-              { href: "/Projects-Programs", label: "Programs" },
-              { href: "/Contact", label: "Contact Us" },
+              { href: "/who-we-are", label: "Who we are" },
+              { href: "/membership", label: "Membership" },
+              { href: "/projects-programs", label: "Programs" },
+              { href: "/contact-us", label: "Contact Us" },
             ].map((link) => (
               <li
                 key={link.href}
@@ -102,10 +102,10 @@ export default function NavBar() {
         <ul className="space-y-4">
           {[
             // { href: "/", label: "Home" },
-            { href: "/WhoWeAre", label: "Who we are" },
-            { href: "/Membership", label: "Membership" },
-            { href: "/Projects-Programs", label: "Programs" },
-            { href: "/Contact", label: "Contact Us" },
+            { href: "/who-we-are", label: "Who we are" },
+            { href: "/membership", label: "Membership" },
+            { href: "/projects-programs", label: "Programs" },
+            { href: "/contact-us", label: "Contact Us" },
           ].map((link) => (
             <li key={link.href}>
               <Link
