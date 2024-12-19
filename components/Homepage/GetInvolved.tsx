@@ -18,7 +18,6 @@ const GetInvolved: React.FC = () => {
           Involved
         </span>
       </h2>
-
       {/* Engagement Options */}
       <div className="flex flex-col gap-6 mb-12 items-center w-full">
         <h3 className="md:text-lg  text-base font-semibold text-center text-gray-800">
@@ -43,8 +42,6 @@ const GetInvolved: React.FC = () => {
           ))}
         </ul>
       </div>
-
-      {/* Why Involvement Matters */}
       <div className="flex flex-col gap-6 items-center text-center">
         <h3 className="text-xl md:text-2xl font-semibold text-gray-800">
           Why Your Involvement Matters
@@ -55,13 +52,21 @@ const GetInvolved: React.FC = () => {
           to thrive. By joining TGF, you stand for justice, fairness, and human
           rights protection.
         </p>
-        {/* CTA */}
-        <Link
-          href="/contact-us"
-          className="bg-green-700 text-white px-6 py-3 rounded-lg hover:bg-green-900 transition duration-300"
-        >
-          Take Action Now
-        </Link>
+        {/* CTAs */}
+        <div className="flex flex-col sm:flex-row gap-4">
+          <Link
+            href="/contact-us"
+            className="bg-green-700 text-white px-6 py-3 w-fit hover:bg-green-900 transition duration-300"
+          >
+            Take Action Now
+          </Link>
+          <Link
+            href="/programs"
+            className="bg-white text-green-700 px-6 py-3 w-fit border-2 border-green-700 hover:bg-green-50 transition duration-300"
+          >
+            Check Out Our Programs
+          </Link>
+        </div>
       </div>
     </section>
   );

@@ -49,7 +49,7 @@ export default function NavBar() {
         {/* Donate CTA Button (visible on lg screens) */}
         <div className="hidden lg:block">
           <Link href="/donate">
-            <button className="bg-green-800 text-white px-5 py-2 rounded hover:bg-green-900 transition duration-300 ease-in-out">
+            <button className="bg-green-800 text-white px-5 py-2  hover:bg-green-900 transition duration-300 ease-in-out">
               Donate
             </button>
           </Link>
@@ -98,9 +98,9 @@ export default function NavBar() {
       <div
         className={`lg:hidden px-4 pt-4 pb-6 ${
           navbar ? "block" : "hidden"
-        } bg-white shadow-lg`}
+        } bg-white`}
       >
-        <ul className="space-y-4">
+        <ul className="space-y-10 mt-4">
           {[
             // { href: "/", label: "Home" },
             { href: "/who-we-are", label: "Who we are" },
@@ -121,7 +121,7 @@ export default function NavBar() {
           {/* Donate Button for Mobile */}
           <li>
             <Link href="/donate">
-              <button className="bg-green-800 text-white px-4 py-2 w-full rounded hover:bg-green-900 transition duration-300">
+              <button className="bg-green-800 text-white px-4 py-2 w-full  hover:bg-green-900 transition duration-300">
                 Donate
               </button>
             </Link>

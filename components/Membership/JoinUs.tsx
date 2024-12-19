@@ -25,7 +25,7 @@ const JoinUs = () => {
           {/* Call to action button */}
           <div className="flex flex-col items-center gap-4">
             <Link
-              href="/membership"
+              href="/memberships"
               className="inline-block px-8 py-3 bg-green-700 hover:bg-green-700 
                 text-white font-semibold  transition-colors duration-200
                 shadow-md hover:shadow-lg cursor-pointer"
