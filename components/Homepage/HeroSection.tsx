@@ -33,7 +33,7 @@ const HeroSection = () => {
         </button>
 
         <button className="border-white border-2 bg-green-800 px-6 py-2">
-          <Link href="/WhoWeAre">Know About Us</Link>
+          <Link href="/who-we-are">Know About Us</Link>
         </button>
       </div>
     </div>
