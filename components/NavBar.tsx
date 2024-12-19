@@ -30,7 +30,7 @@ export default function NavBar() {
             {[
               // { href: "/", label: "Home" },
               { href: "/who-we-are", label: "Who we are" },
-              { href: "/membership", label: "Membership" },
+              { href: "/memberships", label: "Membership" },
               { href: "/projects-programs", label: "Programs" },
               { href: "/contact-us", label: "Contact Us" },
             ].map((link) => (
@@ -104,7 +104,7 @@ export default function NavBar() {
           {[
             // { href: "/", label: "Home" },
             { href: "/who-we-are", label: "Who we are" },
-            { href: "/membership", label: "Membership" },
+            { href: "/memberships", label: "Membership" },
             { href: "/projects-programs", label: "Programs" },
             { href: "/contact-us", label: "Contact Us" },
           ].map((link) => (
