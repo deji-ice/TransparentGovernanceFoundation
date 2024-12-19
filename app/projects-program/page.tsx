@@ -8,10 +8,10 @@ const Progarms = () => {
       <div className="fixed inset-0 w-full h-full">
         <Image
           priority
-          className="w-full h-full object-contain lg:object-cover"
+          className="w-full h-full object-contain lg:object-cover lg:opacity-85"
           fill
           alt="background grid lines"
-          src={`https://res.cloudinary.com/dhvwthnzq/image/upload/v1734609914/Transparent%20Governance%20Foundation/Grid_5_uhrbze.svg`}
+          src={`https://res.cloudinary.com/dhvwthnzq/image/upload/v1734619158/Transparent%20Governance%20Foundation/Grid_layers_fryyuw.png`}
         />
       </div>
 
