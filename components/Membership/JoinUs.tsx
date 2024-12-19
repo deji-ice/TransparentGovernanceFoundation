@@ -16,7 +16,7 @@ const JoinUs = () => {
 
         {/* Content with better typography and spacing */}
         <div className="space-y-6">
-          <p className="text-center text-gray-700 text-lg leading-relaxed">
+          <p className="text-center text-gray-700 text-base leading-relaxed">
             Our members are dedicated professionals who are passionate about
             making a difference. If you share our commitment to good governance,
             transparency, and social justice, we invite you to join us.
@@ -27,7 +27,7 @@ const JoinUs = () => {
             <Link
               href="/membership"
               className="inline-block px-8 py-3 bg-green-700 hover:bg-green-700 
-                text-white font-semibold rounded-lg transition-colors duration-200
+                text-white font-semibold  transition-colors duration-200
                 shadow-md hover:shadow-lg cursor-pointer"
             >
               Become a Member
