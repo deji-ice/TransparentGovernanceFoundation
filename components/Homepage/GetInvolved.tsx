@@ -61,7 +61,7 @@ const GetInvolved: React.FC = () => {
             Take Action Now
           </Link>
           <Link
-            href="/programs"
+            href="/projects-program"
             className="bg-white text-green-700 px-6 py-3 w-fit border-2 border-green-700 hover:bg-green-50 transition duration-300"
           >
             Check Out Our Programs
