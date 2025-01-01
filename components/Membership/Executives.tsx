@@ -40,7 +40,7 @@ const Executives = ({ leaders }: { leaders: Leader[] }) => {
                 height={300}
                 src={item.pic ?? ""}
                 alt={item.name ?? ""}
-                className="rounded-none h-[300px] transition-all duration-700 ease-in-out group-hover:rounded-2xl"
+                className="rounded-none h-[300px] transition-all duration-700 object-cover ease-in-out group-hover:rounded-2xl"
               />
             </div>
 
