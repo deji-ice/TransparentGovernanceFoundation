@@ -33,6 +33,7 @@ const NavLink = memo(({ href, label, pathname, onClick }: {
     </Link>
   </li>
 ));
+
 NavLink.displayName = 'NavLink';
 
 // Memoized DonateButton component
