@@ -42,10 +42,10 @@ export const metadata: Metadata = {
     siteName: "Transparent Governance Foundation",
     images: [
       {
-        url: "https://www.transparencegovfoundation.org/IMG_8356.svg",
+        url: "/IMG_8356.PNG",
         width: 1200,
         height: 630,
-        type: "image/svg+xml",
+        type: "image/png",
         alt: "Transparent Governance Foundation"
       }
     ]
