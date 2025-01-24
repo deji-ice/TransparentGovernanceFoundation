@@ -24,14 +24,35 @@ const dm_sans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.transparencegovfoundation.org'),
-  
-  title: "Transparence Governance Foundation | Promoting Transparency in Governance",
-  description: "Transparence Governance Foundation is dedicated to promoting transparency, accountability, and ethical practices in governance. Join us in building a more transparent future.",
-  keywords: ["transparency", "governance", "accountability", "ethics", "public policy", "democracy", "civic engagement", "good governance", "anti-corruption", "public transparency", "democratic reform", "policy advocacy"],
+  metadataBase: new URL("https://www.transparencegovfoundation.org"),
+
+  title:
+    "Transparence Governance Foundation | Promoting Transparency in Governance",
+  description:
+    "Transparence Governance Foundation is dedicated to promoting transparency, accountability, and ethical practices in governance. Join us in building a more transparent future.",
+  keywords: [
+    "transparency",
+    "transparent",
+    "governance",
+    "accountability",
+    "ethics",
+    "public policy",
+    "democracy",
+    "civic engagement",
+    "good governance",
+    "anti-corruption",
+    "public transparency",
+    "democratic reform",
+    "policy advocacy",
+    "transparencegovfoundation",
+    "transparencegovernancefoundation",
+    "transparentgovfoundation",
+    "ngo",
+    "foundation",
+  ],
   authors: [
     { name: "Transparent Governance Foundation" },
-    { name: "Ayodeji Atanda" } 
+    { name: "Ayodeji Atanda" },
   ],
   publisher: "Transparent Governance Foundation",
   openGraph: {
@@ -46,16 +67,16 @@ export const metadata: Metadata = {
         width: 1200,
         height: 630,
         type: "image/png",
-        alt: "Transparent Governance Foundation"
-      }
-    ]
+        alt: "Transparent Governance Foundation",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Transparence Governance Foundation",
     description: "Promoting transparency and accountability in governance",
     creator: "@dejixice",
-    images: ["/image.png"]
+    images: ["/image.png"],
   },
   robots: {
     index: true,
@@ -63,14 +84,14 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
     },
   },
   viewport: {
     width: "device-width",
-    initialScale: 1
+    initialScale: 1,
   },
   verification: {
     google: "YOUR-GOOGLE-VERIFICATION-CODE",
@@ -99,16 +120,17 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              "name": "Transparent Governance Foundation",
-              "url": "https://www.transparencegovfoundation.org",
-              "logo": "https://www.transparencegovfoundation.org/favicon.ico",
-              "description": "Promoting transparency, accountability, and ethical practices in governance.",
-              "contactPoint": {
+              name: "Transparent Governance Foundation",
+              url: "https://www.transparencegovfoundation.org",
+              logo: "https://www.transparencegovfoundation.org/favicon.ico",
+              description:
+                "Promoting transparency, accountability, and ethical practices in governance.",
+              contactPoint: {
                 "@type": "ContactPoint",
-                "telephone": "+1-123-456-7890",
-                "contactType": "Customer Service",
-                "areaServed": "US",
-                "availableLanguage": ["English"]
+                telephone: "+1-123-456-7890",
+                contactType: "Customer Service",
+                areaServed: "US",
+                availableLanguage: ["English"],
               },
               // "sameAs": [
               //   "https://www.facebook.com/yourprofile",
@@ -123,9 +145,7 @@ export default function RootLayout({
         className={`${playfair.variable} ${montserrat.variable} ${dm_sans.variable} font-montserrat`}
       >
         <NavBar />
-        <div className="min-h-screen mt-[4rem] lg:mt-[4rem]">
-          {children}
-        </div>
+        <div className="min-h-screen mt-[4rem] lg:mt-[4rem]">{children}</div>
         <Footer />
       </body>
     </html>
