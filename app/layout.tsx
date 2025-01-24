@@ -4,6 +4,7 @@ import "./globals.css";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import Head from "next/head";
+import { Analytics } from "@vercel/analytics/react"
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -147,6 +148,7 @@ export default function RootLayout({
         <NavBar />
         <div className="min-h-screen mt-[4rem] lg:mt-[4rem]">{children}</div>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
