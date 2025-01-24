@@ -66,7 +66,6 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-  themeColor: [{ media: "(prefers-color-scheme: light)", color: "#ffffff" }],
   viewport: {
     width: "device-width",
     initialScale: 1
