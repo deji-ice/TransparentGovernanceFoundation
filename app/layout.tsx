@@ -16,7 +16,7 @@ const playfair = Playfair_Display({
   display: "swap",
 });
 
-const  dm_sans = DM_Sans({
+const dm_sans = DM_Sans({
   subsets: ["latin"],
   variable: "--font-dm-sans",
   display: "swap",
@@ -24,6 +24,7 @@ const  dm_sans = DM_Sans({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.transparencegovfoundation.org'),
+  
   title: "Transparence Governance Foundation | Promoting Transparency in Governance",
   description: "Transparence Governance Foundation is dedicated to promoting transparency, accountability, and ethical practices in governance. Join us in building a more transparent future.",
   keywords: ["transparency", "governance", "accountability", "ethics", "public policy", "democracy", "civic engagement", "good governance", "anti-corruption", "public transparency", "democratic reform", "policy advocacy"],
@@ -40,7 +41,7 @@ export const metadata: Metadata = {
     siteName: "Transparent Governance Foundation",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/image.png",
         width: 1200,
         height: 630,
         alt: "Transparent Governance Foundation"
@@ -51,8 +52,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Transparence Governance Foundation",
     description: "Promoting transparency and accountability in governance",
-    creator: "@transparentgov",
-    images: ["/twitter-image.jpg"]
+    creator: "@dejixice",
+    images: ["/image.png"]
   },
   robots: {
     index: true,
@@ -72,7 +73,15 @@ export const metadata: Metadata = {
   },
   verification: {
     google: "YOUR-GOOGLE-VERIFICATION-CODE",
-  }
+  },
+  icons: [
+    {
+      rel: "icon",
+      url: "/favicon.ico",
+      sizes: "any",
+      type: "image/x-icon",
+    },
+  ],
 };
 
 export default function RootLayout({
@@ -82,21 +91,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="bg-white">
-      <link
-        rel="icon"
-        href="./logo.svg"
-        type="image/svg"
-    sizes="any"
-      />
       <body
         className={`${playfair.variable} ${montserrat.variable} ${dm_sans.variable} font-montserrat`}
       >
         <NavBar />
         <div className="min-h-screen mt-[4rem] lg:mt-[4rem]">
-        {children}
+          {children}
         </div>
         <Footer />
-        
       </body>
     </html>
   );
