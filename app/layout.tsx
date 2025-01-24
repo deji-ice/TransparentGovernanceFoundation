@@ -3,6 +3,7 @@ import { DM_Sans, Inter, Montserrat, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
+import Head from "next/head";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -90,6 +91,33 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="bg-white">
+      <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Transparent Governance Foundation",
+              "url": "https://www.transparencegovfoundation.org",
+              "logo": "https://www.transparencegovfoundation.org/favicon.ico",
+              "description": "Promoting transparency, accountability, and ethical practices in governance.",
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+1-123-456-7890",
+                "contactType": "Customer Service",
+                "areaServed": "US",
+                "availableLanguage": ["English"]
+              },
+              // "sameAs": [
+              //   "https://www.facebook.com/yourprofile",
+              //   "https://twitter.com/yourprofile",
+              //   "https://www.linkedin.com/in/yourprofile"
+              // ]
+            }),
+          }}
+        />
+      </Head>
       <body
         className={`${playfair.variable} ${montserrat.variable} ${dm_sans.variable} font-montserrat`}
       >
