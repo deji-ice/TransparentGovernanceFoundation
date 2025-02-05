@@ -29,7 +29,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: 'https://www.transparencegovfoundation.org/memberships',
       lastModified: new Date(),
-      changeFrequency: 'always',
+      changeFrequency: 'monthly',
       priority: 0.5,
     },
     {
