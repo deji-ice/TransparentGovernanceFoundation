@@ -21,6 +21,10 @@ const config: Config = {
       backgroundImage: {
         'custom-gradient': 'linear-gradient(to bottom left, rgba(209, 250, 229, 1) 1%, rgba(255, 255, 255, 1) 97%, rgba(209, 250, 229, 1) 99%)',
       },
+      colors: {
+        'primary': '#166534',
+        'primary-hover': '#145c2f',
+      }
     },
   },
   plugins: [daisyui],
