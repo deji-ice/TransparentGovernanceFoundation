@@ -67,28 +67,29 @@ const Programs = () => {
 
       {/* Content Container - Add relative positioning and background opacity */}
       <div className="relative z-10">
- {/* Hero Section */}
-<section className="relative h-[60vh] overflow-hidden">
-  <Image
-    src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-    alt="Abstract background representing transparency and technology"
-    fill
-    priority
-    className="object-cover w-full h-full"
-  />
-  <div className="absolute inset-0 bg-black/60" /> {/* Overlay to ensure text readability */}
-  <div className="absolute inset-0 flex flex-col items-center justify-center text-white px-4">
-    <span className="text-green-400 font-medium tracking-wider uppercase mb-4">
-      Transforming Communities
-    </span>
-    <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-center mb-6 font-playfair">
-      Programs and Projects
-    </h1>
-    <span className="text-green-400 font-semibold tracking-wider text-lg">
-      2024-2026
-    </span>
-  </div>
-</section>
+        {/* Hero Section */}
+        <section className="relative h-[45vh] overflow-hidden">
+          <Image
+            src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Abstract background representing transparency and technology"
+            fill
+            priority
+            className="object-cover w-full h-full"
+          />
+          <div className="absolute inset-0 bg-black/60" />{" "}
+          {/* Overlay to ensure text readability */}
+          <div className="absolute inset-0 flex flex-col items-center justify-center text-white px-4">
+            <span className="text-green-400 font-medium tracking-wider uppercase mb-4">
+              Transforming Communities
+            </span>
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-center mb-6 font-playfair">
+              Programs and Projects
+            </h1>
+            <span className="text-green-400 font-semibold tracking-wider text-lg">
+              2024-2026
+            </span>
+          </div>
+        </section>
 
         {/* Introduction Section - Add semi-transparent background */}
         <section className="max-w-7xl mx-auto px-4 py-16">

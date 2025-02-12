@@ -122,13 +122,13 @@ const AboutUs = () => {
   return (
     <div className="flex flex-col text-base">
       {/* Enhanced Hero Section */}
-      <section className="relative h-[70vh] overflow-hidden">
+      <section className="relative h-[45vh] overflow-hidden">
         <Image
           alt="Group of people in a meeting"
           width={1920}
           height={1080}
           priority
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover object-center"
           src="https://images.unsplash.com/photo-1573166675921-076ea6b621ce?w=1200"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent" />
