@@ -56,8 +56,8 @@ const DonateButton = memo(
   }) => (
     <button
       onClick={onClick}
-      className={`bg-[#166534] text-white px-6 py-2.5 rounded-lg
-    hover:bg-green-700 transition-all duration-300 
+      className={`bg-primary text-white px-6 py-2.5 rounded-lg
+    hover:bg-primary-hover transition-all duration-300 
     hover:shadow-lg active:scale-95 ${className}`}
     >
       Donate
