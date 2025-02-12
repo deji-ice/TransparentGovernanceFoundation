@@ -1,11 +1,11 @@
 import React from "react";
 import { FaUserPlus, FaHandsHelping, FaUser, FaHandshake, FaNewspaper, FaLightbulb } from "react-icons/fa";
 
-export type Item = {
-  icon: React.ReactNode; // Use ReactNode for React elements
+export interface Item {
+  icon: React.ReactNode;
   title: string;
   description: string;
-};
+}
 
 export type Leader = {
   id: number;
