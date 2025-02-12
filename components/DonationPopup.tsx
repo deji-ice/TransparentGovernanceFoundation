@@ -57,7 +57,8 @@ const DonationPopup = ({ isOpen, onClose }: DonationPopupProps) => {
               value={amount}
               onChange={(e) => setAmount(e.target.value)}
               placeholder="Enter custom amount"
-              className="w-full pl-8 pr-4 py-3 border-2 accents:bg-white bg-white border-gray-200 rounded-lg focus:border-green-600 focus:ring-0 transition-colors"
+            //  TODO: change the accent color to white, upgrade tailwind to V4
+              className="w-full pl-8 pr-4 py-3 border-2 bg-white border-gray-200 rounded-lg focus:border-green-600 focus:ring-0 transition-colors"
             />
           </div>
 
