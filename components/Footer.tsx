@@ -1,95 +1,158 @@
 import React from "react";
-import { FaFacebookF, FaXTwitter, FaLinkedinIn } from "react-icons/fa6";
+import {
+  FaFacebookF,
+  FaXTwitter,
+  FaLinkedinIn,
+  FaEnvelope,
+  FaPhone,
+} from "react-icons/fa6";
+import { FaMapMarkerAlt } from "react-icons/fa";
 import Image from "next/image";
+import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col gap-8 bg-green-800 text-white w-full px-6 md:px-20 py-12">
-      {/* Main Footer Content */}
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-12 w-full">
-        {/* Foundation Info with Logo */}
-        <div className="space-y-4">
-          <div className="flex items-center gap-4 transform hover:scale-105 transition-transform duration-300">
-            <Image
-              src="https://res.cloudinary.com/dhvwthnzq/image/upload/v1734355553/Transparent%20Governance%20Foundation/IMG_8356_xtbhut.png"
-              alt="Transparent Governance Foundation Logo"
-              height={50}
-              width={50}
-              className="h-14 w-14 md:h-10 md:w-10 lg:h-14 lg:w-14"
-            />
-            <h2 className="text-xl md:text-base lg:text-xl font-bold">
-              Transparent Governance Foundation
-            </h2>
+    <footer className="relative bg-primary text-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        {/* Main Footer Content */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+          {/* Foundation Info */}
+          <div className="space-y-6">
+            <Link
+              href="/"
+              className="group flex items-center gap-4 transform transition-transform duration-300 hover:scale-105"
+            >
+              <Image
+                src="https://res.cloudinary.com/dhvwthnzq/image/upload/v1734355553/Transparent%20Governance%20Foundation/IMG_8356_xtbhut.png"
+                alt="TGF Logo"
+                height={56}
+                width={56}
+                className="rounded-lg shadow-lg"
+              />
+              <h2 className="text-xl font-bold group-hover:text-green-300 transition-colors duration-300">
+                Transparent Governance Foundation
+              </h2>
+            </Link>
+            <p className="text-gray-200 leading-relaxed">
+              Promoting transparency, accountability, and civic engagement to
+              build a fair and just society for everyone.
+            </p>
           </div>
-          <p className="text-sm text-gray-200 leading-relaxed">
-            Promoting transparency, accountability, and civic engagement to
-            build a fair and just society.
+
+          {/* Quick Links */}
+          <div className="space-y-6">
+            <h3 className="text-xl font-semibold relative pb-4 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-1 after:w-12 after:bg-green-600">
+              Quick Links
+            </h3>
+            <ul className="space-y-3">
+              {[
+                { href: "/who-we-are", label: "Who We Are" },
+                { href: "/projects-program", label: "Programs & Projects" },
+                { href: "/memberships", label: "Members" },
+                { href: "/contact-us", label: "Contact Us" },
+              ].map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="group flex items-center text-gray-200 hover:text-white transition-colors duration-300"
+                  >
+                    <span className="transform translate-x-0 group-hover:translate-x-2 transition-transform duration-300">
+                      {link.label}
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Contact Information */}
+          <div className="space-y-6">
+            <h3 className="text-xl font-semibold relative pb-4 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-1 after:w-12 after:bg-green-600">
+              Get in Touch
+            </h3>
+            <div className="space-y-4">
+              <div className="flex items-start gap-3">
+                <FaMapMarkerAlt className="flex-shrink-0 w-5 h-5 text-green-600 mt-1" />
+                <div>
+                  <p className="font-medium">Denver Office</p>
+                  <p className="text-gray-200 mt-1">
+                    20504 E49 Avenue, Denver,
+                    <br />
+                    Colorado 80249, USA
+                  </p>
+                </div>
+              </div>
+              <a
+                href="mailto:info@tgf.com"
+                className="flex items-center gap-3 text-gray-200 hover:text-white transition-colors duration-300"
+              >
+                <FaEnvelope className="w-5 h-5 text-green-600" />
+                info@tgf.com
+              </a>
+              <a
+                href="tel:123-456-7890"
+                className="flex items-center gap-3 text-gray-200 hover:text-white transition-colors duration-300"
+              >
+                <FaPhone className="w-5 h-5 text-green-600" />
+                123-456-7890
+              </a>
+            </div>
+          </div>
+
+          {/* Newsletter & Social */}
+          <div className="space-y-6">
+            <h3 className="text-xl font-semibold relative pb-4 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-1 after:w-12 after:bg-green-600">
+              Stay Connected
+            </h3>
+            <form className="space-y-4">
+              <div className="relative">
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  className="w-full px-4 py-3 bg-white/10 rounded-lg border border-green-600 
+                           focus:border-green-400 focus:ring-1 focus:ring-green-400 
+                           placeholder:text-gray-400 transition-all duration-300"
+                />
+                <button
+                  type="submit"
+                  className="absolute right-2 top-1/2 -translate-y-1/2 px-4 py-1.5 
+                           bg-green-600 text-white rounded-md hover:bg-green-500 
+                           transition-colors duration-300"
+                >
+                  Join
+                </button>
+              </div>
+            </form>
+            <div className="space-y-4">
+              <p className="font-medium">Follow Us</p>
+              <div className="flex gap-4">
+                {[
+                  { Icon: FaFacebookF, href: "#" },
+                  { Icon: FaXTwitter, href: "#" },
+                  { Icon: FaLinkedinIn, href: "#" },
+                ].map(({ Icon, href }, index) => (
+                  <a
+                    key={index}
+                    href={href}
+                    className="w-10 h-10 flex items-center justify-center rounded-full 
+                             bg-white/10 hover:bg-green-600 transition-all duration-300 
+                             transform hover:scale-110"
+                  >
+                    <Icon className="w-5 h-5" />
+                  </a>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Copyright */}
+        <div className="mt-16 pt-8 border-t border-green-600/30 text-center text-gray-300">
+          <p>
+            &copy; {new Date().getFullYear()} Transparent Governance Foundation.
+            All rights reserved.
           </p>
         </div>
-
-        {/* Links Section */}
-        <div className="flex flex-col gap-4">
-          <h3 className="text-xl font-semibold border-b border-green-700 pb-2">Links</h3>
-          <ul className="space-y-3">
-            <li className="hover:text-green-300 transition-colors duration-200 cursor-pointer">Who We Are</li>
-            <li className="hover:text-green-300 transition-colors duration-200 cursor-pointer">Programs & Projects</li>
-            <li className="hover:text-green-300 transition-colors duration-200 cursor-pointer">Members</li>
-          </ul>
-        </div>
-
-        {/* Location Section */}
-        <div className="flex flex-col gap-4">
-          <h3 className="text-xl font-semibold border-b border-green-700 pb-2">Location</h3>
-          <div className="space-y-2">
-            <p className="font-medium">Denver</p>
-            <p className="text-sm text-gray-200">
-              20504 E49 Avenue, Denver, <br /> Colorado 80249, USA
-            </p>
-            <p className="text-sm text-green-300 cursor-pointer hover:text-green-200 transition-colors duration-200">
-              See on map
-            </p>
-            <div className="pt-2">
-              <p className="flex items-center gap-2">
-                Email:{" "}
-                <a href="mailto:info@tgf.com" className="text-green-300 hover:text-green-200 transition-colors duration-200">
-                  info@tgf.com
-                </a>
-              </p>
-              <p className="mt-1">Phone: 123-456-7890</p>
-            </div>
-          </div>
-        </div>
-
-        {/* Membership and Social Links */}
-        <div className="flex flex-col gap-4">
-          <h3 className="text-xl font-semibold border-b border-green-700 pb-2">Want to Join?</h3>
-          <p className="hover:text-green-300 transition-colors duration-200 cursor-pointer">Sign up for our Newsletter</p>
-          <input
-            type="email"
-            placeholder="Enter your email"
-            className="p-3 rounded-lg placeholder:text-sm bg-white/10 text-white border border-green-700 focus:outline-none focus:border-green-500 transition-colors duration-200"
-          />
-          <div className="flex flex-col gap-4 mt-2">
-            <p className="font-semibold">Follow Us</p>
-            <div className="flex gap-6 text-2xl">
-              {[FaFacebookF, FaXTwitter, FaLinkedinIn].map((Icon, index) => (
-                <a
-                  key={index}
-                  href="#"
-                  aria-label={`Social Link ${index + 1}`}
-                  className="hover:text-green-300 transition-colors duration-200 transform hover:scale-110"
-                >
-                  <Icon />
-                </a>
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Copyright */}
-      <div className="text-center text-gray-300 text-sm border-t border-green-700 pt-6">
-        &copy; {new Date().getFullYear()} Transparent Governance Foundation. All rights reserved.
       </div>
     </footer>
   );
