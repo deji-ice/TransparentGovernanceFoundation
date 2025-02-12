@@ -1,50 +1,54 @@
 import React from "react";
 import Link from "next/link";
+import { FaArrowRight } from "react-icons/fa";
 
 const JoinUs = () => {
   return (
-    <div className="min-h-[400px] flex flex-col items-center justify-center bg-gradient-to-b from-white to-gray-50 px-6 sm:px-16 lg:px-32 py-16">
-      <div className="max-w-3xl mx-auto">
-        {/* Title with decorative elements */}
-        <div className="flex items-center justify-center gap-3 mb-8">
-          <div className="h-[2px] w-10 bg-green-600"></div>
-          <h3 className="font-dm_sans text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800">
-            Join Us
+    <div className="min-h-[400px] bg-gradient-to-b from-gray-50 to-white px-4 py-16">
+      <div className="max-w-4xl mx-auto">
+        {/* Enhanced Header */}
+        <div className="text-center space-y-4 mb-12">
+          <h3 className="text-3xl md:text-4xl font-bold text-gray-900">
+            Join Our <span className="text-green-700">Mission</span>
           </h3>
-          <div className="h-[2px] w-10 bg-green-600"></div>
+          <div className="flex items-center justify-center gap-4">
+            <div className="h-[2px] w-12 bg-green-600"></div>
+            <p className="text-lg text-gray-600">Become a Member Today</p>
+            <div className="h-[2px] w-12 bg-green-600"></div>
+          </div>
         </div>
 
-        {/* Content with better typography and spacing */}
-        <div className="space-y-6">
-          <p className="text-center text-gray-700 text-base leading-relaxed">
+        {/* Content Section */}
+        <div className="space-y-8">
+          <p className="text-center text-gray-700 text-lg max-w-2xl mx-auto leading-relaxed">
             Our members are dedicated professionals who are passionate about
             making a difference. If you share our commitment to good governance,
             transparency, and social justice, we invite you to join us.
           </p>
 
-          {/* Call to action button */}
-          <div className="flex flex-col items-center gap-4">
+          {/* Call to Action */}
+          <div className="flex flex-col items-center gap-6">
             <Link
               href="/memberships"
-              className="inline-block px-8 py-3 bg-green-700 hover:bg-green-700 
-                text-white font-semibold  transition-colors duration-200
-                shadow-md hover:shadow-lg cursor-pointer"
+              className="group inline-flex items-center gap-2 px-8 py-4 bg-green-700 
+                       text-white font-semibold rounded-lg hover:bg-green-800 
+                       transition-all duration-300 border-2 border-transparent
+                       hover:border-green-600"
             >
-              Become a Member
+              <span>Become a Member</span>
+              <FaArrowRight className="group-hover:translate-x-1 transition-transform duration-300" />
             </Link>
-            <span className="text-gray-500 text-sm">
+            <span className="text-gray-500">
               Learn more about membership benefits
             </span>
           </div>
 
-          {/* Tagline with subtle styling */}
-          <div className="mt-12 text-center">
+          {/* Tagline */}
+          <div className="mt-16 text-center">
             <p
-              className="italic text-green-600 font-medium text-sm sm:text-base
-              border-t border-gray-200 pt-6 max-w-md mx-auto"
+              className="italic text-green-700 font-medium border-t-2 border-gray-100 
+                         pt-8 max-w-md mx-auto"
             >
-              Transparent Governance Foundation –
-              <br />
               Together, We Can Make a Difference
             </p>
           </div>
