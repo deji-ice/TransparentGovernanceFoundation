@@ -23,6 +23,8 @@ const DonationPopup = ({ isOpen, onClose }: DonationPopupProps) => {
 
     try {
       const PaystackPop = (await import("@paystack/inline-js")).default;
+      console.log(process.env.NEXT_PUBLIC_PAYSTACK_PUBLIC_KEY);
+      console.log(process.env.NEXT_PUBLIC_PAYSTACK_PUBLIC_KEY);
       await new PaystackPop().newTransaction({
         key: process.env.NEXT_PUBLIC_PAYSTACK_PUBLIC_KEY!,
         email,
@@ -158,7 +160,10 @@ const DonationPopup = ({ isOpen, onClose }: DonationPopupProps) => {
 
           <span className="text-sm text-center text-gray-500 flex items-center justify-center gap-1">
             <FaLock className="w-3 h-3" />
-            <p className="text-xs"> Secured by Paystack. You will receive a receipt via email.</p>
+            <p className="text-xs">
+              {" "}
+              Secured by Paystack. You will receive a receipt via email.
+            </p>
           </span>
         </form>
       </div>
