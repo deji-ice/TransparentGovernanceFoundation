@@ -23,8 +23,6 @@ const DonationPopup = ({ isOpen, onClose }: DonationPopupProps) => {
 
     try {
       const PaystackPop = (await import("@paystack/inline-js")).default;
-      console.log(process.env.NEXT_PUBLIC_PAYSTACK_PUBLIC_KEY);
-      console.log(process.env.NEXT_PUBLIC_PAYSTACK_PUBLIC_KEY);
       await new PaystackPop().newTransaction({
         key: process.env.NEXT_PUBLIC_PAYSTACK_PUBLIC_KEY!,
         email,
