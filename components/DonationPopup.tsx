@@ -93,7 +93,7 @@ const DonationPopup = ({ isOpen, onClose }: DonationPopupProps) => {
                 type="button"
                 key={preset}
                 onClick={() => setAmount(preset)}
-                className={`py-3 px-4 rounded-lg border-2 transition-all duration-300
+                className={`py-3 px-4 rounded-lg border-2 flex items-center justify-center transition-all duration-300
                   ${
                     amount === preset
                       ? "border-green-600 bg-green-50 text-green-700 shadow-sm"

@@ -53,9 +53,9 @@ const faqs = [
 
 const Contact = () => {
   return (
-    <div className="flex flex-col items-center justify-between mt-20 bg-linear-to-b from-gray-50 to-white min-h-screen">
+    <div className="flex flex-col items-center justify-between mt-20 bg-gradient-to-b from-gray-50 to-white min-h-screen">
       {/* Enhanced Hero Section with subtle gradient */}
-      <div className="w-full bg-linear-to-r from-green-700 to-[#166534] text-white py-20 px-4">
+      <div className="w-full bg-gradient-to-r from-green-700 to-[#166534] text-white py-20 px-4">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold font-playfair mb-6">
             Get in Touch
@@ -129,7 +129,7 @@ const Contact = () => {
                   Message
                 </label>
                 <textarea
-                  className="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-300focus:ring-1 focus:ring-green-500 focus:border-green-500 transition-colors duration-200"
+                  className="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-300 focus:ring-1 focus:ring-green-500 focus:border-green-500 transition-colors duration-200"
                   id="message"
                   rows={6}
                   placeholder="Your message..."
@@ -138,7 +138,7 @@ const Contact = () => {
               <button
                 className="px-8 py-4 bg-green-600 text-white rounded-lg
                           hover:bg-green-700 transition-colors duration-200
-                          font-medium"
+                          font-medium w-full md:w-auto"
                 type="submit"
               >
                 Send Message
@@ -146,7 +146,6 @@ const Contact = () => {
             </form>
           </section>
 
-          {/* Refined Contact Info & Map Section */}
           {/* Refined Contact Info & Map Section */}
           <section className="space-y-8">
             <div className="grid sm:grid-cols-2 lg:grid-cols-1 gap-4">
