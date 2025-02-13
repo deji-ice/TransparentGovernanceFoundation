@@ -72,7 +72,7 @@ const Footer = () => {
             </h3>
             <div className="space-y-4">
               <div className="flex items-start gap-3">
-                <FaMapMarkerAlt className="flex-shrink-0 w-5 h-5 text-green-600 mt-1" />
+                <FaMapMarkerAlt className="shrink-0 w-5 h-5 text-green-600 mt-1" />
                 <div>
                   <p className="font-medium">Denver Office</p>
                   <p className="text-gray-200 mt-1">

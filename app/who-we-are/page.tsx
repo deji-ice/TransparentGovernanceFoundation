@@ -131,7 +131,7 @@ const AboutUs = () => {
           className="w-full h-full object-cover object-center"
           src="https://images.unsplash.com/photo-1573166675921-076ea6b621ce?w=1200"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/50 to-transparent" />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-white">
           <span className="text-green-400 font-medium tracking-wider uppercase mb-4">
             About Us
@@ -179,7 +179,7 @@ const AboutUs = () => {
               <div className="space-y-8">
                 {milestones.map((milestone, index) => (
                   <div key={index} className="flex gap-4">
-                    <div className="flex-shrink-0 w-20">
+                    <div className="shrink-0 w-20">
                       <span className="text-green-700 font-bold">
                         {milestone.year}
                       </span>
@@ -256,7 +256,7 @@ const AboutUs = () => {
                             }
                           `}
                           >
-                            <div className="flex-shrink-0 flex items-center gap-2">
+                            <div className="shrink-0 flex items-center gap-2">
                               <span className="text-green-700 font-bold text-lg">
                                 {event.year}
                               </span>
@@ -419,7 +419,7 @@ const AboutUs = () => {
                 Contact Us
               </a>
               <a
-                href="/projects"
+                href="/projects-program"
                 className="px-8 py-4 border-2 border-green-700 text-green-700 
                          rounded-xl hover:bg-green-50 transition-colors duration-300"
               >

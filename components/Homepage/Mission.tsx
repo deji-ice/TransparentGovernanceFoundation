@@ -43,7 +43,7 @@ const Mission = () => {
                   priority
                 />
                 {/* Image Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+                <div className="absolute inset-0 bg-linear-to-t from-black/60 via-black/20 to-transparent"></div>
               </div>
             </div>
           </div>
@@ -68,7 +68,7 @@ const Mission = () => {
                   key={index}
                   className="flex items-start gap-4 p-4 bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
                 >
-                  <div className="mt-1 flex-shrink-0">{point.icon}</div>
+                  <div className="mt-1 shrink-0">{point.icon}</div>
                   <p className="text-gray-700 leading-relaxed">{point.text}</p>
                 </div>
               ))}

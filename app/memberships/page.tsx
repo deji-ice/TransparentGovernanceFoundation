@@ -91,7 +91,7 @@ const Membership = () => {
       </div>
 
       {/* Executives Section with enhanced styling */}
-      <div className="relative z-20 w-full py-20 bg-white/80 backdrop-blur-sm">
+      <div className="relative z-20 w-full py-20 bg-white/80 backdrop-blur-xs">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold font-playfair text-gray-900 mb-4">
@@ -107,7 +107,7 @@ const Membership = () => {
       </div>
 
       {/* Enhanced Membership Benefits Section */}
-      <section className="relative z-20 w-full py-20 bg-gradient-to-b from-white/90 to-gray-50/90 backdrop-blur-sm">
+      <section className="relative z-20 w-full py-20 bg-linear-to-b from-white/90 to-gray-50/90 backdrop-blur-xs">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
@@ -147,7 +147,7 @@ const Membership = () => {
             ].map((benefit, index) => (
               <div
                 key={index}
-                className="group bg-white/90 backdrop-blur-sm p-8 rounded-xl border-2 border-gray-200
+                className="group bg-white/90 backdrop-blur-xs p-8 rounded-xl border-2 border-gray-200
                          hover:border-green-500 transition-all duration-300"
               >
                 <div className="text-green-600 mb-6 group-hover:scale-110 transition-transform duration-300">
@@ -164,7 +164,7 @@ const Membership = () => {
       </section>
 
       {/* Membership Tiers Section */}
-      <section className="relative z-20 w-full py-20 bg-white/80 backdrop-blur-sm">
+      <section className="relative z-20 w-full py-20 bg-white/80 backdrop-blur-xs">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">

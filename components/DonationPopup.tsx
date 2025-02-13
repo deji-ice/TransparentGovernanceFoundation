@@ -15,7 +15,7 @@ const DonationPopup = ({ isOpen, onClose }: DonationPopupProps) => {
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center px-4">
-      <div className="fixed inset-0 bg-black/60 backdrop-blur-sm" onClick={onClose} />
+      <div className="fixed inset-0 bg-black/60 backdrop-blur-xs" onClick={onClose} />
       <div className="relative bg-white rounded-xl shadow-xl max-w-md w-full p-6 md:p-8">
         <button 
           onClick={onClose}

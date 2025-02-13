@@ -7,7 +7,10 @@ import DonationPopup from "../DonationPopup";
 const HeroSection = () => {
   const [isDonateOpen, setIsDonateOpen] = useState(false);
 
-  const toggleDonate = () => setIsDonateOpen((prev) => !prev);
+  const toggleDonate = () => {
+    console.log("first");
+    setIsDonateOpen((prev) => !prev);
+  };
 
   return (
     <>
@@ -25,7 +28,7 @@ const HeroSection = () => {
         <p className="font-semibold text-center font-dm_sans italic md:text-xl">
           Empowering Communities for a Brighter Future
         </p>
-        <div className="flex flex-col  gap-3 md:gap-8 justify-center items-center m">
+        <div className="flex flex-col gap-3 md:gap-8 justify-center items-center">
           <h1 className="text-3xl md:text-4xl  w-full font-playfair font-semibold text-center">
             Heroes of Transparent Governance Foundation
           </h1>
@@ -35,7 +38,7 @@ const HeroSection = () => {
             between governments and the people.
           </p>
         </div>
-        <div className="mt-3 flex flex-col md:flex-row gap-3 md:gap-10">
+        <div className="mt-3 flex relative z-10 flex-col md:flex-row gap-3 md:gap-10">
           <button
             onClick={toggleDonate}
             className="bg-white text-green-800 px-6 py-2.5 rounded-lg
@@ -45,7 +48,7 @@ const HeroSection = () => {
             Donate Now
           </button>
 
-          <button className="border-white border-2 relative z-10 bg-green-800 px-6 py-2 rounded-lg hover:bg-green-700 transition-colors duration-300">
+          <button className="border-white border-2  bg-green-800 px-6 py-2 rounded-lg hover:bg-green-700 transition-colors duration-300">
             <Link href="/who-we-are">Know About Us</Link>
           </button>
         </div>

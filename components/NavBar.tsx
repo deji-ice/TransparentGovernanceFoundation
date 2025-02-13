@@ -76,7 +76,7 @@ export default function NavBar() {
 
   return (
     <>
-      <nav className="w-screen bg-white text-black shadow fixed py-2 z-50 top-0 font-programme">
+      <nav className="w-screen bg-white text-black shadow-sm fixed py-2 z-50 top-0 font-programme">
         <div className="flex justify-between items-center px-4 md:px-14 mx-auto md:max-w-7xl">
           <div className="flex items-center gap-6">
             <Link href="/">
@@ -102,7 +102,7 @@ export default function NavBar() {
           </div>
 
           <button
-            className="p-2 text-black rounded-md outline-none focus:border-gray-400 focus:border lg:hidden"
+            className="p-2 text-black rounded-md outline-hidden focus:border-gray-400 focus:border lg:hidden"
             onClick={toggleMenu}
             aria-label="Toggle menu"
           >

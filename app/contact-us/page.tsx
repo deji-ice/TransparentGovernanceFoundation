@@ -53,9 +53,9 @@ const faqs = [
 
 const Contact = () => {
   return (
-    <div className="flex flex-col items-center justify-between mt-20 bg-gradient-to-b from-gray-50 to-white min-h-screen">
+    <div className="flex flex-col items-center justify-between mt-20 bg-linear-to-b from-gray-50 to-white min-h-screen">
       {/* Enhanced Hero Section with subtle gradient */}
-      <div className="w-full bg-gradient-to-r from-green-700 to-[#166534] text-white py-20 px-4">
+      <div className="w-full bg-linear-to-r from-green-700 to-[#166534] text-white py-20 px-4">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold font-playfair mb-6">
             Get in Touch
@@ -157,7 +157,7 @@ const Contact = () => {
                   className="flex items-start p-6 bg-white rounded-lg border border-gray-300
                  hover:border-green-500 hover:bg-green-50 transition-all duration-200"
                 >
-                  <div className="flex-shrink-0 p-3 bg-green-50 rounded-lg text-green-600 border-2 border-green-200">
+                  <div className="shrink-0 p-3 bg-green-50 rounded-lg text-green-600 border-2 border-green-200">
                     {info.icon}
                   </div>
                   <div className="ml-4">

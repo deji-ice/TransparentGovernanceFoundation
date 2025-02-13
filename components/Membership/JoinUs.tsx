@@ -4,7 +4,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 const JoinUs = () => {
   return (
-    <div className="min-h-[400px] bg-gradient-to-b from-gray-50 to-white px-4 py-16">
+    <div className="min-h-[400px] bg-linear-to-b from-gray-50 to-white px-4 py-16">
       <div className="max-w-4xl mx-auto">
         {/* Enhanced Header */}
         <div className="text-center space-y-4 mb-12">

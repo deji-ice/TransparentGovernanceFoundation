@@ -115,7 +115,7 @@ const Programs = () => {
             {programsAndProjects?.map((item) => (
               <div
                 key={item.title}
-                className="group bg-white/95 rounded-2xl overflow-hidden border-2 border-gray-100 backdrop-blur-sm"
+                className="group bg-white/95 rounded-2xl overflow-hidden border-2 border-gray-100 backdrop-blur-xs"
               >
                 <div className="relative h-64">
                   <Image
@@ -149,10 +149,10 @@ const Programs = () => {
               <div
                 key={index}
                 className="group flex items-start p-6 bg-white/95 rounded-xl border-2 border-gray-200 
-                         hover:border-green-500 transition-all duration-300 backdrop-blur-sm"
+                         hover:border-green-500 transition-all duration-300 backdrop-blur-xs"
               >
                 <div
-                  className="flex-shrink-0 w-12 h-12 bg-green-50 rounded-xl 
+                  className="shrink-0 w-12 h-12 bg-green-50 rounded-xl 
                               flex items-center justify-center text-green-600
                               group-hover:bg-green-100 transition-colors duration-300"
                 >

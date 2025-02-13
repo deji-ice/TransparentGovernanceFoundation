@@ -23,7 +23,7 @@ const AboutUs = () => {
   ];
 
   return (
-    <section className="relative py-16 px-4 md:px-8 lg:px-16 bg-gradient-to-b from-white to-gray-50">
+    <section className="relative py-16 px-4 md:px-8 lg:px-16 bg-linear-to-b from-white to-gray-50">
       {/* Decorative Background */}
       <div className="absolute inset-0 -z-10 opacity-20">
         <div className="absolute right-1/2 bottom-0 -mb-8 -mr-24 w-[200px] h-[200px] rounded-full bg-green-700 blur-3xl" />
@@ -52,7 +52,7 @@ const AboutUs = () => {
                 height={400}
                 className="rounded-lg object-cover shadow-xl transition-transform duration-300 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-lg"></div>
+              <div className="absolute inset-0 bg-linear-to-t from-black/50 to-transparent rounded-lg"></div>
             </div>
           </div>
 
