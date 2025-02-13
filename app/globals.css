@@ -1,7 +1,5 @@
 @import 'tailwindcss';
 
-@config '../tailwind.config.ts';
-
 @theme {
     /* adding fonts */
     --font-playfair: 'Playfair Display', serif;

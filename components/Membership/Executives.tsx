@@ -12,7 +12,7 @@ const Executives = ({ leaders }: { leaders: Leader[] }) => {
   const handleToggle = (i: React.SetStateAction<Leader | null>) => {
     setShowModal(!showModal);
     setUserData(i as Leader);
-    console.log(showModal, "showModal");
+    // console.log(showModal, "showModal");
   };
   return (
     <div className="relative flex flex-col items-center">

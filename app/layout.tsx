@@ -4,7 +4,7 @@ import "./globals.css";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import Head from "next/head";
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from "@vercel/analytics/react";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -27,10 +27,8 @@ const dm_sans = DM_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.transparencegovfoundation.org"),
 
-  title:
-    "Transparence Governance Foundation | Promoting Transparency in Governance",
-  description:
-    "Transparence Governance Foundation is dedicated to promoting transparency, accountability, and ethical practices in governance. Join us in building a more transparent future.",
+  title: "Transparent Governance Foundation",
+  description: "Promoting transparency and accountability in governance",
   keywords: [
     "transparency",
     "transparent",
@@ -105,6 +103,11 @@ export const metadata: Metadata = {
       type: "image/x-icon",
     },
   ],
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({

@@ -8,7 +8,7 @@ const HeroSection = () => {
   const [isDonateOpen, setIsDonateOpen] = useState(false);
 
   const toggleDonate = () => {
-    console.log("first");
+    // console.log("first");
     setIsDonateOpen((prev) => !prev);
   };
 
