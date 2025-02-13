@@ -53,7 +53,7 @@ const faqs = [
 
 const Contact = () => {
   return (
-    <div className="flex flex-col items-center justify-between mt-20 bg-gradient-to-b from-gray-50 to-white min-h-screen">
+    <div className="flex flex-col items-center justify-between mt-16 bg-gradient-to-b from-gray-50 to-white min-h-screen">
       {/* Enhanced Hero Section with subtle gradient */}
       <div className="w-full bg-gradient-to-r from-green-700 to-[#166534] text-white py-20 px-4">
         <div className="max-w-7xl mx-auto text-center">
